@@ -1,0 +1,187 @@
+@media only screen and (max-width: 600px) {
+  .content-order-success {
+    min-height: 100vh;
+  }
+
+  .content-order-success > .section-img {
+    margin-top: 7rem;
+    margin-bottom: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+
+  .content-order-success > .section-img > .img {
+    width: 30rem;
+    height: 12rem;
+  }
+
+  .content-order-success > .section-bottom {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .content-order-success > .section-bottom > .head {
+    margin-bottom: 1.1rem;
+    color: black;
+    font-weight: 650;
+    font-size: 1.2rem;
+    font-family: "Instrument Sans", sans-serif;
+  }
+
+  .content-order-success > .section-bottom > .sub-head {
+    margin-bottom: 0.2rem;
+    color: rgba(0, 0, 0, 0.482);
+    font-weight: 40;
+    font-size: 0.7rem;
+    font-family: "Instrument Sans", sans-serif;
+  }
+
+  .content-order-success > .section-bottom > .sub-head1 {
+    margin-bottom: 1.2rem;
+    color: rgba(0, 0, 0, 0.482);
+    font-weight: 40;
+    font-size: 0.7rem;
+    font-family: "Instrument Sans", sans-serif;
+  }
+
+  .content-order-success > .section-bottom > button {
+    padding: 0.4rem 1.7rem;
+    border: 1px solid #7653537e;
+    border-radius: 0.4rem;
+    color: #765353;
+    background-color: #F4D7DE;
+    font-weight: 450;
+    font-size: 0.75rem;
+    font-family: "Instrument Sans", sans-serif;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .content-order-success {
+    min-height: 100vh;
+  }
+
+  .content-order-success > .section-img {
+    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+
+  .content-order-success > .section-img > .img {
+    width: 40rem;
+    height: 20rem;
+  }
+
+  .content-order-success > .section-bottom {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .content-order-success > .section-bottom > .head {
+    margin-bottom: 1.1rem;
+    color: black;
+    font-weight: 650;
+    font-size: 1.6rem;
+    font-family: "Instrument Sans", sans-serif;
+  }
+
+  .content-order-success > .section-bottom > .sub-head {
+    color: rgba(0, 0, 0, 0.482);
+    font-weight: 40;
+    font-size: 0.85rem;
+    font-family: "Instrument Sans", sans-serif;
+  }
+
+  .content-order-success > .section-bottom > .sub-head1 {
+    margin-bottom: 1.2rem;
+    color: rgba(0, 0, 0, 0.482);
+    font-weight: 40;
+    font-size: 0.85rem;
+    font-family: "Instrument Sans", sans-serif;
+  }
+
+  .content-order-success > .section-bottom > button {
+    padding: 0.5rem 2rem;
+    border: 1px solid #7653537e;
+    border-radius: 0.4rem;
+    color: #765353;
+    background-color: #F4D7DE;
+    font-weight: 450;
+    font-size: 0.85rem;
+    font-family: "Instrument Sans", sans-serif;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .content-order-success {
+    min-height: 100vh;
+  }
+
+  .content-order-success > .section-img {
+    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+
+  .content-order-success > .section-img > .img {
+    width: 45rem;
+    height: 25rem;
+  }
+
+  .content-order-success > .section-bottom {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .content-order-success > .section-bottom > .head {
+    margin-bottom: 1.1rem;
+    color: black;
+    font-weight: 650;
+    font-size: 1.8rem;
+    font-family: "Instrument Sans", sans-serif;
+  }
+
+  .content-order-success > .section-bottom > .sub-head {
+    color: rgba(0, 0, 0, 0.482);
+    font-weight: 40;
+    font-size: 0.85rem;
+    font-family: "Instrument Sans", sans-serif;
+  }
+
+  .content-order-success > .section-bottom > .sub-head1 {
+    margin-bottom: 1.1rem;
+    color: rgba(0, 0, 0, 0.482);
+    font-weight: 40;
+    font-size: 0.85rem;
+    font-family: "Instrument Sans", sans-serif;
+  }
+
+  .content-order-success > .section-bottom > button {
+    padding: 0.8rem 2rem;
+    border: 1px solid #7653537e;
+    border-radius: 0.4rem;
+    color: #765353;
+    background-color: #F4D7DE;
+    font-weight: 450;
+    font-size: 0.85rem;
+    font-family: "Instrument Sans", sans-serif;
+  }
+}

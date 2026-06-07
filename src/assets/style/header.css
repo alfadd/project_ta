@@ -1,0 +1,77 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-bottom: 1.2rem;
+  background-color: #eed1d1;
+}
+
+.header > .logo-link > p {
+  font-size: 1.7rem;
+  font-weight: 550;
+  color: #765353;
+  font-family: "Inria Serif", serif;
+  text-align: center;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-link h2 {
+  cursor: pointer;
+}
+
+.header > a > button {
+  padding: 0.3rem 2rem;
+  border-radius: 1rem;
+  background-color: transparent;
+  border: 2px solid #765353;
+  font-family: "Roboto", sans-serif;
+  color: #765353;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .header > h2 {
+    font-size: 1.3rem;
+  }
+  .header > a > button {
+    padding: 0.2rem 0.7rem;
+    border: 1px solid #765353;
+    border-radius: 1rem;
+    font-size: 0.6rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .header {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .header > a > button {
+    border: 1px solid #765353;
+    font-weight: 4000;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .header {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .header {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+}

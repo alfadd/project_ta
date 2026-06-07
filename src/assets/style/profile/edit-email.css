@@ -1,0 +1,577 @@
+@media only screen and (max-width: 600px) {
+  .content-edit-email {
+    min-height: 100vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-edit-email > .title-section {
+    margin-bottom: 1.4rem;
+    height: 2rem;
+    width: 100%;
+    color: #765353;
+    box-shadow: 0rem 0rem 0.6rem #76535372;
+    border: 1px solid #76535342;
+    border-radius: 0.5rem;
+    background-color: #f4e9e9;
+    gap: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .content-edit-email > .title-section > p {
+    font-weight: 600;
+    font-size: 1.15rem;
+    font-family: "Instrument Sans", sans-serif;
+  }
+
+  .content-edit-email > .content-body {
+    padding: 1.5rem 1.5rem;
+    box-shadow: 0rem 0rem 0.5rem #76535372;
+    border: 1px solid rgba(0, 0, 0, 0.381);
+    border-radius: 1rem;
+    width: 93%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  .content-edit-email > .content-body > .title {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    color: black;
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: "Instrument Sans", sans-serif;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.571);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .content-edit-email > .content-body > .section-input {
+    /* margin: 0 0.6rem; */
+    justify-content: start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-edit-email > .content-body > .section-input > .input-last-email {
+    width: 100%;
+    justify-content: start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0 0.5rem;
+  }
+
+  .content-edit-email > .content-body > .section-input > .input-last-email > p {
+    color: black;
+    font-weight: 500;
+    font-size: 0.7rem;
+    font-family: "Instrument Sans", sans-serif;
+  }
+
+  .content-edit-email
+    > .content-body
+    > .section-input
+    > .input-last-email
+    > input {
+      padding: 0 0.3rem;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border: 1px solid #635f5f86;
+    border-radius: 4px;
+    width: 100%;
+    height: 1.9rem;
+    color: black;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .content-edit-email > .content-body > .section-btn {
+    width: 100%;
+    margin-top: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 0.3rem;
+  }
+
+  .content-edit-email > .content-body > .section-btn > .btn-cancel {
+    padding: 0.5rem 1rem;
+    width: 50%;
+    height: auto;
+    border: 1px solid #76535342;
+    border-radius: 0.3rem;
+    background-color: #635f5f1a;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+
+    color: black;
+    font-weight: 300;
+    font-size: 0.7rem;
+    font-family: "Instrument Sans", sans-serif;
+    cursor: pointer;
+  }
+
+  .content-edit-email > .content-body > .section-btn > .btn-save {
+    padding: 0.5rem 0;
+    width: 50%;
+    height: auto;
+    border: 1px solid #76535342;
+    border-radius: 0.3rem;
+    background-color: #f4e9e9;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+
+    color: black;
+    font-weight: 300;
+    font-size: 0.7rem;
+    font-family: "Instrument Sans", sans-serif;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .content-edit-email {
+    min-height: 100vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-edit-email > .title-section {
+    margin-bottom: 1.4rem;
+    height: 2.3rem;
+    width: 100%;
+    color: #765353;
+    box-shadow: 0rem 0rem 0.6rem #76535372;
+    border: 1px solid #76535342;
+    border-radius: 0.5rem;
+    background-color: #f4e9e9;
+    gap: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .content-edit-email > .title-section > p {
+    font-weight: 600;
+    font-size: 1.4rem;
+    font-family: "Instrument Sans", sans-serif;
+  }
+
+  .content-edit-email > .content-body {
+    padding: 1.5rem 1.5rem;
+    box-shadow: 0rem 0rem 0.5rem #76535372;
+    border: 1px solid rgba(0, 0, 0, 0.381);
+    border-radius: 1rem;
+    width: 93%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  .content-edit-email > .content-body > .title {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    color: black;
+    font-weight: 600;
+    font-size: 1.15rem;
+    font-family: "Instrument Sans", sans-serif;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.571);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .content-edit-email > .content-body > .section-input {
+    margin: 0 0.6rem;
+    justify-content: start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-edit-email > .content-body > .section-input > .input-last-email {
+    width: 100%;
+    justify-content: start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .content-edit-email > .content-body > .section-input > .input-last-email > p {
+    color: black;
+    font-weight: 500;
+    font-size: 0.9rem;
+    font-family: "Instrument Sans", sans-serif;
+  }
+
+  .content-edit-email
+    > .content-body
+    > .section-input
+    > .input-last-email
+    > input {
+      padding: 0 0.3rem;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border: 1px solid #635f5f86;
+    border-radius: 4px;
+    width: 100%;
+    height: 2.1rem;
+    color: black;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .content-edit-email > .content-body > .section-btn {
+    margin-top: 0.5rem;
+    justify-content: end;
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .content-edit-email > .content-body > .section-btn > .btn-cancel {
+    padding: 0.5rem 0;
+    width: 10rem;
+    height: auto;
+    border: 1px solid #76535342;
+    border-radius: 0.3rem;
+    background-color: #635f5f1a;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+
+    color: black;
+    font-weight: 300;
+    font-size: 0.8rem;
+    font-family: "Instrument Sans", sans-serif;
+    cursor: pointer;
+  }
+
+  .content-edit-email > .content-body > .section-btn > .btn-save {
+    padding: 0.5rem 0;
+    width: 10rem;
+    height: auto;
+    border: 1px solid #76535342;
+    border-radius: 0.3rem;
+    background-color: #f4e9e9;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+
+    color: black;
+    font-weight: 300;
+    font-size: 0.8rem;
+    font-family: "Instrument Sans", sans-serif;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .content-edit-email {
+    min-height: 100vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-edit-email > .title-section {
+    margin-bottom: 1.4rem;
+    height: 2.6rem;
+    width: 100%;
+    color: #765353;
+    box-shadow: 0rem 0rem 0.6rem #76535372;
+    border: 1px solid #76535342;
+    border-radius: 0.5rem;
+    background-color: #f4e9e9;
+    gap: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .content-edit-email > .title-section > p {
+    font-weight: 600;
+    font-size: 1.4rem;
+    font-family: "Instrument Sans", sans-serif;
+  }
+
+  .content-edit-email > .content-body {
+    padding: 1.5rem 1.5rem;
+    box-shadow: 0rem 0rem 0.5rem #76535372;
+    border: 1px solid rgba(0, 0, 0, 0.381);
+    border-radius: 1rem;
+    width: 93%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  .content-edit-email > .content-body > .title {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    color: black;
+    font-weight: 600;
+    font-size: 1.3rem;
+    font-family: "Instrument Sans", sans-serif;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.571);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .content-edit-email > .content-body > .section-input {
+    margin: 0 0.6rem;
+    justify-content: start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-edit-email > .content-body > .section-input > .input-last-email {
+    width: 100%;
+    justify-content: start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .content-edit-email > .content-body > .section-input > .input-last-email > p {
+    color: black;
+    font-weight: 500;
+    font-size: 0.9rem;
+    font-family: "Instrument Sans", sans-serif;
+  }
+
+  .content-edit-email
+    > .content-body
+    > .section-input
+    > .input-last-email
+    > input {
+      padding: 0 0.3rem;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border: 1px solid #635f5f86;
+    border-radius: 4px;
+    width: 100%;
+    height: 2.2rem;
+    color: black;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .content-edit-email > .content-body > .section-btn {
+    margin-top: 0.5rem;
+    justify-content: end;
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .content-edit-email > .content-body > .section-btn > .btn-cancel {
+    padding: 0.6rem 0;
+    width: 10rem;
+    height: auto;
+    border: 1px solid #76535342;
+    border-radius: 0.3rem;
+    background-color: #635f5f1a;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+
+    color: black;
+    font-weight: 300;
+    font-size: 0.8rem;
+    font-family: "Instrument Sans", sans-serif;
+    cursor: pointer;
+  }
+
+  .content-edit-email > .content-body > .section-btn > .btn-save {
+    padding: 0.6rem 0;
+    width: 10rem;
+    height: auto;
+    border: 1px solid #76535342;
+    border-radius: 0.3rem;
+    background-color: #f4e9e9;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+
+    color: black;
+    font-weight: 300;
+    font-size: 0.8rem;
+    font-family: "Instrument Sans", sans-serif;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .content-edit-email {
+    min-height: 100vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-edit-email > .title-section {
+    margin-bottom: 1.4rem;
+    height: 3rem;
+    width: 100%;
+    color: #765353;
+    box-shadow: 0rem 0rem 0.6rem #76535372;
+    border: 1px solid #76535342;
+    border-radius: 0.5rem;
+    background-color: #f4e9e9;
+    gap: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .content-edit-email > .title-section > p {
+    font-weight: 600;
+    font-size: 1.7rem;
+    font-family: "Instrument Sans", sans-serif;
+  }
+
+  .content-edit-email > .content-body {
+    padding: 1.5rem 1.5rem;
+    box-shadow: 0rem 0rem 0.5rem #76535372;
+    border: 1px solid rgba(0, 0, 0, 0.381);
+    border-radius: 1rem;
+    width: 93%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  .content-edit-email > .content-body > .title {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    color: black;
+    font-weight: 600;
+    font-size: 1.37rem;
+    font-family: "Instrument Sans", sans-serif;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.571);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .content-edit-email > .content-body > .section-input {
+    margin: 0 0.6rem;
+    justify-content: start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-edit-email > .content-body > .section-input > .input-last-email {
+    width: 100%;
+    justify-content: start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .content-edit-email > .content-body > .section-input > .input-last-email > p {
+    color: black;
+    font-weight: 500;
+    font-size: 0.9rem;
+    font-family: "Instrument Sans", sans-serif;
+  }
+
+  .content-edit-email
+    > .content-body
+    > .section-input
+    > .input-last-email
+    > input {
+      padding: 0 0.3rem;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border: 1px solid #635f5f86;
+    border-radius: 4px;
+    width: 100%;
+    height: 2.2rem;
+    color: black;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .content-edit-email > .content-body > .section-btn {
+    margin-top: 0.5rem;
+    justify-content: end;
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .content-edit-email > .content-body > .section-btn > .btn-cancel {
+    padding: 0.6rem 0;
+    width: 10rem;
+    height: auto;
+    border: 1px solid #76535342;
+    border-radius: 0.3rem;
+    background-color: #635f5f1a;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+
+    color: black;
+    font-weight: 300;
+    font-size: 0.9rem;
+    font-family: "Instrument Sans", sans-serif;
+    cursor: pointer;
+  }
+
+  .content-edit-email > .content-body > .section-btn > .btn-save {
+    padding: 0.66rem 0;
+    width: 11rem;
+    height: auto;
+    border: 1px solid #76535342;
+    border-radius: 0.3rem;
+    background-color: #f4e9e9;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+
+    color: black;
+    font-weight: 300;
+    font-size: 0.9rem;
+    font-family: "Instrument Sans", sans-serif;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,1904 @@
+@media only screen and (max-width: 600px) {
+  .content-history-order {
+    min-height: 100vh;
+  }
+
+  .content-history-order > .title-section {
+    height: 2.2rem;
+    width: 100%;
+    color: #765353;
+    box-shadow: 0rem 0rem 0.6rem #76535372;
+    border: 1px solid #76535342;
+    border-radius: 0.5rem;
+    background-color: #f4e9e9;
+    gap: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .content-history-order > .title-section > .title-icon {
+    width: 1.2rem;
+    stroke-width: 1.5px;
+  }
+
+  .content-history-order > .title-section > p {
+    font-weight: 600;
+    font-size: 1.1rem;
+    font-family: "Instrument Sans", sans-serif;
+  }
+
+  .content-history-order > .group-home {
+    margin-top: 1rem;
+    justify-content: start;
+    align-items: center;
+    display: flex;
+    gap: 0rem;
+  }
+
+  .content-history-order > .group-home > .icon-chevron {
+    width: 2rem;
+    color: black;
+  }
+
+  .content-history-order > .group-home > p {
+    color: black;
+    font-size: 1rem;
+  }
+
+  .content-history-order > .section-btn {
+    margin-bottom: 0.2rem;
+    padding: 0.4rem;
+    margin-top: 0.5rem;
+    background-color: #8f8f8f30;
+    border-radius: 0.9rem;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    gap: 0.3rem;
+    box-sizing: border-box;
+  }
+
+  .content-history-order > .section-btn > .btn-all {
+    color: black;
+    font-size: 0.75rem;
+    font-weight: 600;
+    background-color: #ffff;
+    border: 1px solid #7653539e;
+    border-radius: 0.7rem;
+    width: 33%;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+  }
+
+  .content-history-order > .section-btn > .btn-all > p {
+  }
+
+  .content-history-order > .section-btn > .btn-ongoing {
+    color: black;
+    font-size: 0.75rem;
+    font-weight: 600;
+    background-color: #ffff;
+    border: 1px solid #7653539e;
+    border-radius: 0.7rem;
+    width: 33%;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+  }
+
+  .content-history-order > .section-btn > .btn-ongoing > p {
+  }
+
+  .content-history-order > .section-btn > .btn-done {
+    color: black;
+    font-size: 0.75rem;
+    font-weight: 600;
+    background-color: #ffff;
+    border: 1px solid #7653539e;
+    border-radius: 0.7rem;
+    width: 33%;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+  }
+
+  .content-history-order > .section-btn > .btn-done > p {
+  }
+
+  .content-history-order > .fill-section {
+    margin-top: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .content-history-order > .fill-section > .card-body-history {
+    margin-top: 0rem;
+    padding: 0.3rem 0.6rem;
+    font-weight: 500;
+    font-family: "Instrumen Sans", sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  /* card body */
+  .content-history-order > .fill-section > .card-body-history > .side-top {
+    width: 98%;
+    height: 2.2rem;
+    background-color: #fcf6f6;
+    border: 1px solid #7653537d;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-top
+    > .group-left {
+    padding-left: 0.6rem;
+    justify-content: start;
+    align-items: center;
+    display: flex;
+    gap: 0.3rem;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-top
+    > .group-left
+    > .p1 {
+    color: black;
+    font-family: "Instrumens Sans", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 200;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-top
+    > .group-left
+    > .p2 {
+    color: black;
+    font-family: "Instrumens Sans", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 550;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-top
+    > .tagline-card {
+    background-color: #f0bcbc;
+    border-bottom-left-radius: 5rem;
+    border-top-right-radius: 2rem;
+    width: 7.1rem;
+    height: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-top
+    > .tagline-card
+    > p {
+    color: black;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-top
+    > .tagline-card2 {
+    background-color: #c8f0bc;
+    border-bottom-left-radius: 5rem;
+    border-top-right-radius: 2rem;
+    width: 7.1rem;
+    height: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-top
+    > .tagline-card2
+    > p {
+    color: black;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .content-history-order > .fill-section > .card-body-history > .side-bottom {
+    background-color: #ffff;
+    border-radius: 0.6rem;
+    box-shadow: 0rem 0rem 0.4rem #76535366;
+    width: 100%;
+    height: 7.2rem;
+    display: flex;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .first-side {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 35%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .first-side
+    > .picture-card {
+    background-color: #765353;
+    border-radius: 0.4rem;
+    width: 5.5rem;
+    height: 5.7rem;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .first-side
+    > .picture-card
+    > .card-img-checkout {
+    width: 100%;
+    height: 100%;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side {
+    margin-right: 0.7rem;
+    width: 65%;
+    justify-content: center;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-1 {
+    margin-bottom: 0.4rem;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    text-align: center;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-1
+    > .title-card {
+    margin-top: 0.4rem;
+    color: black;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-1
+    > .qty-card {
+    color: black;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-2 {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #8f8f8f;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-2
+    > .size-card {
+    margin-top: 0.2rem;
+    color: black;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 0.65rem;
+    font-weight: 400;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-2
+    > .price {
+    color: black;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-3 {
+    margin-top: 0.5rem;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-3
+    > .order-id {
+    justify-content: center;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-3
+    > .order-id
+    > .p1 {
+    color: black;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-3
+    > .order-id
+    > .p2 {
+    color: black;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-3
+    > .detail-btn {
+    font-size: 0.7rem;
+    font-weight: 400;
+    background-color: #8f8f8fa8;
+    border: transparent;
+    border-radius: 0.6rem;
+    width: 5.8rem;
+    height: 1.7rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-3
+    .detail-btn:hover {
+    background-color: #f0bcbc;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .content-history-order {
+    min-height: 100vh;
+  }
+
+  .content-history-order > .title-section {
+    height: 2.4rem;
+    width: 100%;
+    color: #765353;
+    box-shadow: 0rem 0rem 0.6rem #76535372;
+    border: 1px solid #76535342;
+    border-radius: 0.5rem;
+    background-color: #f4e9e9;
+    gap: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .content-history-order > .title-section > .title-icon {
+    width: 1.4rem;
+    stroke-width: 1.5px;
+  }
+
+  .content-history-order > .title-section > p {
+    font-weight: 600;
+    font-size: 1.3rem;
+    font-family: "Instrument Sans", sans-serif;
+  }
+
+  .content-history-order > .group-home {
+    margin-top: 1rem;
+    justify-content: start;
+    align-items: center;
+    display: flex;
+    gap: 0rem;
+  }
+
+  .content-history-order > .group-home > .icon-chevron {
+    width: 2rem;
+    color: black;
+  }
+
+  .content-history-order > .group-home > p {
+    color: black;
+    font-size: 1rem;
+  }
+
+  .content-history-order > .section-btn {
+    margin-bottom: 0.2rem;
+    padding: 0.4rem;
+    margin-top: 1rem;
+    background-color: #8f8f8f30;
+    border-radius: 0.9rem;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    box-sizing: border-box;
+  }
+
+  .content-history-order > .section-btn > .btn-all {
+    color: black;
+    font-size: 0.9rem;
+    font-weight: 600;
+    background-color: #ffff;
+    border: 1px solid #7653539e;
+    border-radius: 0.7rem;
+    width: 33%;
+    height: 2.2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+  }
+
+  .content-history-order > .section-btn > .btn-all > p {
+  }
+
+  .content-history-order > .section-btn > .btn-ongoing {
+    color: black;
+    font-size: 0.9rem;
+    font-weight: 600;
+    background-color: #ffff;
+    border: 1px solid #7653539e;
+    border-radius: 0.7rem;
+    width: 33%;
+    height: 2.2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+  }
+
+  .content-history-order > .section-btn > .btn-ongoing > p {
+  }
+
+  .content-history-order > .section-btn > .btn-done {
+    color: black;
+    font-size: 0.9rem;
+    font-weight: 600;
+    background-color: #ffff;
+    border: 1px solid #7653539e;
+    border-radius: 0.7rem;
+    width: 33%;
+    height: 2.2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+  }
+
+  .content-history-order > .section-btn > .btn-done > p {
+  }
+
+  .content-history-order > .fill-section {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-history-order > .fill-section > .card-body-history {
+    margin-top: 0rem;
+    padding: 0.7rem 1rem;
+    font-weight: 500;
+    font-family: "Instrumen Sans", sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  /* card body */
+  .content-history-order > .fill-section > .card-body-history > .side-top {
+    width: 98%;
+    height: 2.3rem;
+    background-color: #fcf6f6;
+    border: 1px solid #7653537d;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-top
+    > .group-left {
+    padding-left: 1rem;
+    justify-content: start;
+    align-items: center;
+    display: flex;
+    gap: 0.3rem;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-top
+    > .group-left
+    > .p1 {
+    color: black;
+    font-family: "Instrumens Sans", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 200;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-top
+    > .group-left
+    > .p2 {
+    color: black;
+    font-family: "Instrumens Sans", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 550;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-top
+    > .tagline-card {
+    background-color: #f0bcbc;
+    border-bottom-left-radius: 5rem;
+    border-top-right-radius: 2rem;
+    width: 10rem;
+    height: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-top
+    > .tagline-card
+    > p {
+    color: black;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-top
+    > .tagline-card2 {
+    background-color: #c8f0bc;
+    border-bottom-left-radius: 5rem;
+    border-top-right-radius: 2rem;
+    width: 10rem;
+    height: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-top
+    > .tagline-card2
+    > p {
+    color: black;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .content-history-order > .fill-section > .card-body-history > .side-bottom {
+    background-color: #ffff;
+    border-radius: 0.6rem;
+    box-shadow: 0rem 0rem 0.4rem #76535366;
+    width: 100%;
+    height: 8.5rem;
+    display: flex;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .first-side {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 22%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .first-side
+    > .picture-card {
+    background-color: #765353;
+    border-radius: 0.4rem;
+    width: 6.5rem;
+    height: 6.5rem;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .first-side
+    > .picture-card
+    > .card-img-checkout {
+    width: 100%;
+    height: 100%;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side {
+    margin-right: 1rem;
+    width: 78%;
+    justify-content: center;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-1 {
+    margin-bottom: 0.4rem;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    text-align: center;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-1
+    > .title-card {
+    margin-top: 0.5rem;
+    color: black;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-1
+    > .qty-card {
+    color: black;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-2 {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #8f8f8f;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-2
+    > .size-card {
+    margin-top: 0.2rem;
+    color: black;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-2
+    > .price {
+    color: black;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-3 {
+    margin-top: 0.5rem;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-3
+    > .order-id {
+    justify-content: start;
+    align-items: center;
+    display: flex;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-3
+    > .order-id
+    > .p1 {
+    color: black;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-3
+    > .order-id
+    > .p2 {
+    color: black;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-3
+    > .detail-btn {
+    font-size: 0.8rem;
+    font-weight: 400;
+    background-color: #8f8f8fa8;
+    border: transparent;
+    border-radius: 0.6rem;
+    width: 7rem;
+    height: 2.1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-3
+    .detail-btn:hover {
+    background-color: #f0bcbc;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .content-history-order {
+    min-height: 100vh;
+  }
+
+  .content-history-order > .title-section {
+    height: 3rem;
+    width: 100%;
+    color: #765353;
+    box-shadow: 0rem 0rem 0.6rem #76535372;
+    border: 1px solid #76535342;
+    border-radius: 0.5rem;
+    background-color: #f4e9e9;
+    gap: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .content-history-order > .title-section > .title-icon {
+    width: 1.6rem;
+    stroke-width: 1.5px;
+  }
+
+  .content-history-order > .title-section > p {
+    font-weight: 600;
+    font-size: 1.6rem;
+    font-family: "Instrument Sans", sans-serif;
+  }
+
+  .content-history-order > .group-home {
+    margin-top: 1rem;
+    justify-content: start;
+    align-items: center;
+    display: flex;
+    gap: 0rem;
+  }
+
+  .content-history-order > .group-home > .icon-chevron {
+    width: 2rem;
+    color: black;
+  }
+
+  .content-history-order > .group-home > p {
+    color: black;
+    font-size: 1rem;
+  }
+
+  .content-history-order > .section-btn {
+    padding: 0.6rem;
+    margin-top: 1rem;
+    background-color: #8f8f8f30;
+    border-radius: 0.9rem;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    box-sizing: border-box;
+  }
+
+  .content-history-order > .section-btn > .btn-all,
+  .content-history-order > .section-btn > .btn-ongoing,
+  .content-history-order > .section-btn > .btn-done {
+    color: #666666;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #ffffff54;
+    border: 1px solid #7653539e;
+    border-radius: 0.7rem;
+    width: 33%;
+    height: 2.2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  /* ACTIVE */
+  .content-history-order > .section-btn > .btn-all.active,
+  .content-history-order > .section-btn > .btn-ongoing.active,
+  .content-history-order > .section-btn > .btn-done.active {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #765353;
+  }
+
+  .content-history-order > .section-btn > .btn-all:hover,
+  .content-history-order > .section-btn > .btn-ongoing:hover,
+  .content-history-order > .section-btn > .btn-done:hover {
+    transform: translateY(-1px);
+  }
+
+  .content-history-order > .section-btn > .btn-all:active,
+  .content-history-order > .section-btn > .btn-ongoing:active,
+  .content-history-order > .section-btn > .btn-done:active {
+    transform: scale(0.97);
+  }
+
+  .content-history-order > .fill-section {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-history-order > .fill-section > .card-body-history {
+    margin-top: 1rem;
+    padding: 0.7rem 1rem;
+    font-weight: 500;
+    font-family: "Instrumen Sans", sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  /* card body */
+  .content-history-order > .fill-section > .card-body-history > .side-top {
+    width: 98%;
+    height: 2.5rem;
+    background-color: #fcf6f6;
+    border: 1px solid #7653537d;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-top
+    > .group-left {
+    padding-left: 1rem;
+    justify-content: start;
+    align-items: center;
+    display: flex;
+    gap: 0.3rem;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-top
+    > .group-left
+    > .p1 {
+    color: black;
+    font-family: "Instrumens Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-top
+    > .group-left
+    > .p2 {
+    color: black;
+    font-family: "Instrumens Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 550;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-top
+    > .tagline-card {
+    background-color: #f0bcbc;
+    border-bottom-left-radius: 5rem;
+    border-top-right-radius: 2rem;
+    width: 10rem;
+    height: 1.7rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-top
+    > .tagline-card
+    > p {
+    color: black;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-top
+    > .tagline-card2 {
+    background-color: #c8f0bc;
+    border-bottom-left-radius: 5rem;
+    border-top-right-radius: 2rem;
+    width: 10rem;
+    height: 1.7rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-top
+    > .tagline-card2
+    > p {
+    color: black;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .content-history-order > .fill-section > .card-body-history > .side-bottom {
+    background-color: #ffff;
+    border-radius: 0.6rem;
+    box-shadow: 0rem 0rem 0.4rem #76535366;
+    width: 100%;
+    height: 8.5rem;
+    display: flex;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .first-side {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 18%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .first-side
+    > .picture-card {
+    background-color: #765353;
+    border-radius: 0.4rem;
+    width: 7rem;
+    height: 7rem;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .first-side
+    > .picture-card
+    > .card-img-checkout {
+    width: 100%;
+    height: 100%;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side {
+    margin-right: 1rem;
+    width: 82%;
+    justify-content: center;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-1 {
+    margin-bottom: 0.4rem;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    text-align: center;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-1
+    > .title-card {
+    margin-top: 0.5rem;
+    color: black;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-1
+    > .qty-card {
+    color: black;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-2 {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #8f8f8f;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-2
+    > .size-card {
+    margin-top: 0.2rem;
+    color: black;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-2
+    > .price {
+    color: black;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-3 {
+    margin-top: 0.5rem;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-3
+    > .order-id {
+    justify-content: start;
+    align-items: center;
+    display: flex;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-3
+    > .order-id
+    > .p1 {
+    color: black;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-3
+    > .order-id
+    > .p2 {
+    color: black;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-3
+    > .detail-btn {
+    font-size: 0.9rem;
+    font-weight: 400;
+    background-color: #8f8f8fa8;
+    border: transparent;
+    border-radius: 0.6rem;
+    width: 7rem;
+    height: 2.3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-3
+    .detail-btn:hover {
+    background-color: #f0bcbc;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .content-history-order {
+    min-height: 100vh;
+  }
+
+  .content-history-order > .title-section {
+    height: 3rem;
+    width: 100%;
+    color: #765353;
+    box-shadow: 0rem 0rem 0.6rem #76535372;
+    border: 1px solid #76535342;
+    border-radius: 0.6rem;
+    background-color: #f4e9e9;
+    gap: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .content-history-order > .title-section > .title-icon {
+    width: 1.6rem;
+    stroke-width: 1.5px;
+  }
+
+  .content-history-order > .title-section > p {
+    font-weight: 600;
+    font-size: 1.7rem;
+    font-family: "Instrument Sans", sans-serif;
+  }
+
+  .content-history-order > .group-home {
+    margin-top: 1rem;
+    justify-content: start;
+    align-items: center;
+    display: flex;
+    gap: 0rem;
+  }
+
+  .content-history-order > .group-home > .icon-chevron {
+    width: 2rem;
+    color: black;
+  }
+
+  .content-history-order > .group-home > p {
+    color: black;
+    font-size: 1.3rem;
+  }
+
+  .content-history-order > .section-btn {
+    padding: 0.6rem;
+    margin-top: 1rem;
+    background-color: #8f8f8f30;
+    border-radius: 0.9rem;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    box-sizing: border-box;
+  }
+
+  .content-history-order > .section-btn > .btn-all,
+  .content-history-order > .section-btn > .btn-ongoing,
+  .content-history-order > .section-btn > .btn-done {
+    color: #666666;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #ffffff54;
+    border: 1px solid #7653539e;
+    border-radius: 0.7rem;
+    width: 33%;
+    height: 2.2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  /* ACTIVE */
+  .content-history-order > .section-btn > .btn-all.active,
+  .content-history-order > .section-btn > .btn-ongoing.active,
+  .content-history-order > .section-btn > .btn-done.active {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #765353;
+  }
+
+  .content-history-order > .section-btn > .btn-all:hover,
+  .content-history-order > .section-btn > .btn-ongoing:hover,
+  .content-history-order > .section-btn > .btn-done:hover {
+    transform: translateY(-1px);
+  }
+
+  .content-history-order > .section-btn > .btn-all:active,
+  .content-history-order > .section-btn > .btn-ongoing:active,
+  .content-history-order > .section-btn > .btn-done:active {
+    transform: scale(0.97);
+  }
+
+  .content-history-order > .fill-section {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-history-order > .fill-section > .card-body-history {
+    margin-top: 1rem;
+    padding: 0.7rem 1rem;
+    font-weight: 500;
+    font-family: "Instrumen Sans", sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  /* card body */
+  .content-history-order > .fill-section > .card-body-history > .side-top {
+    width: 98%;
+    height: 2.8rem;
+    background-color: #fcf6f6;
+    border: 1px solid #7653537d;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-top
+    > .group-left {
+    padding-left: 1rem;
+    justify-content: start;
+    align-items: center;
+    display: flex;
+    gap: 0.3rem;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-top
+    > .group-left
+    > .p1 {
+    color: black;
+    font-family: "Instrumens Sans", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 200;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-top
+    > .group-left
+    > .p2 {
+    color: black;
+    font-family: "Instrumens Sans", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 550;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-top
+    > .tagline-card {
+    background-color: #f0bcbc;
+    border-bottom-left-radius: 5rem;
+    border-top-right-radius: 2rem;
+    width: 10rem;
+    height: 1.9rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-top
+    > .tagline-card
+    > p {
+    color: black;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-top
+    > .tagline-card2 {
+    background-color: #c8f0bc;
+    border-bottom-left-radius: 5rem;
+    border-top-right-radius: 2rem;
+    width: 10rem;
+    height: 1.9rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-top
+    > .tagline-card2
+    > p {
+    color: black;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .content-history-order > .fill-section > .card-body-history > .side-bottom {
+    background-color: #ffff;
+    border-radius: 0.6rem;
+    box-shadow: 0rem 0rem 0.4rem #76535366;
+    width: 100%;
+    height: 9rem;
+    display: flex;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .first-side {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 17%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .first-side
+    > .picture-card {
+    background-color: #765353;
+    border-radius: 0.4rem;
+    width: 7.5rem;
+    height: 7.5rem;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .first-side
+    > .picture-card
+    > .card-img-checkout {
+    width: 100%;
+    height: 100%;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side {
+    margin-right: 1rem;
+    width: 83%;
+    justify-content: center;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-1 {
+    margin-bottom: 0.4rem;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    text-align: center;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-1
+    > .title-card {
+    margin-top: 0.5rem;
+    color: black;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-1
+    > .qty-card {
+    color: black;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-2 {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #8f8f8f;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-2
+    > .size-card {
+    margin-top: 0.2rem;
+    color: black;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-2
+    > .price {
+    color: black;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-3 {
+    margin-top: 0.5rem;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-3
+    > .order-id {
+    justify-content: start;
+    align-items: center;
+    display: flex;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-3
+    > .order-id
+    > .p1 {
+    color: black;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-3
+    > .order-id
+    > .p2 {
+    color: black;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-3
+    > .detail-btn {
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: #8f8f8fa8;
+    border: transparent;
+    border-radius: 0.6rem;
+    width: 7.5rem;
+    height: 2.3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .content-history-order
+    > .fill-section
+    > .card-body-history
+    > .side-bottom
+    > .second-side
+    > .group-3
+    .detail-btn:hover {
+    background-color: #f0bcbc;
+  }
+}
