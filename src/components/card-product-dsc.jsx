@@ -1,6 +1,7 @@
 import { Heart } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router";
+import { useAddToFav, useAddToFavDispatch } from "../context/add-to-fav-context";
 
 export default function CardProductDsc({
   id,
@@ -10,7 +11,29 @@ export default function CardProductDsc({
   oriPrice,
   dscPrice,
 }) {
-  const [isFav, setIsFav] = useState(false);
+  const favDispatch = useAddToFavDispatch();
+  const {fav} = useAddToFav();
+  const isFav = fav.some((item) => item.id === id);
+
+  const handleFav = () => {
+    if (!isFav) {
+      favDispatch({
+        type: "ADD_TO_FAV",
+        payload: {
+          fav: {
+            id: id,
+          },
+        },
+      });
+    } else {
+      favDispatch({
+        type: "REMOVE_FROM_FAV",
+        payload: {
+          id: id,
+        },
+      });
+    }
+  };
 
   return (
     <div className="card-disc">
@@ -27,19 +50,17 @@ export default function CardProductDsc({
             {children}
           </Link>
           <Heart
-            onClick={() => setIsFav(!isFav)}
+            onClick={handleFav}
             className={`fav-icon ${isFav ? "active" : ""}`}
           />
         </div>
         <div className="price-wrapper">
-          {/* <div className="group1"> */}
           <h5 className="ori-price">{oriPrice}</h5>
-          {/* </div> */}
+        
 
           <p className="disc-price">{dscPrice} </p>
 
-          {/* <button> <ShoppingCartIcon className="shopping-icon-add"/> add to cart</button> */}
-        </div>
+          </div>
       </div>
     </div>
   );

@@ -98,10 +98,7 @@ export default function DetailOrder() {
               <div className="section-summary">
                 <p>Ringkasan Pesanan</p>
                 <div className="detail-price">
-                  {/* <div className="subtotal-group">
-                    <p>Subtotal</p>
-                    <p>Rp. 750,000</p>
-                  </div> */}
+                  
                   <div className="item1-group">
                     <p>Total Item</p>
                     <p>2pcs</p>

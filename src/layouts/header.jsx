@@ -3,7 +3,7 @@ import "../assets/style/header.css";
 export default function Header() {
   return (
     <header className="header">
-      <Link to="/" className="logo-link">
+      <Link to="/home" className="logo-link">
         <p>Ummu Afifa Collection</p>
       </Link>
       {/* <Link to={"/about"}>

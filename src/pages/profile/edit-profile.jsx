@@ -3,22 +3,28 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router";
 import "../../assets/style/profile/edit-profile.css";
 import MainLayout from "../../layouts/main-layout";
+import { useProfile, useProfileDispatch } from "../../context/profile-context";
+import InputField from "../../components/input-fields";
 
 export default function EditProfile() {
   const navigate = useNavigate();
 
   const [isShow, setIsShow] = useState(false);
+
+  const { fullName, phone, email, password } = useProfile();
+  const dispatch = useProfileDispatch();
+
+  const [nameInput, setNameInput] = useState(fullName);
+  const [phoneInput, setPhoneInput] = useState(phone);
   return (
     <>
       <MainLayout>
         <div className="content-edit-profile">
           <div className="title-section">
-            {/* <ShoppingBag className="title-icon" /> */}
             <p>Edit Profil</p>
           </div>
 
           <div className="group-top">
-
             <div className="top-logout" onClick={() => setIsShow(true)}>
               <p>Keluar</p>
               <LogOut className="logout-icon" />
@@ -46,14 +52,18 @@ export default function EditProfile() {
           </div> */}
 
             <div className="section-2">
-              <div className="group-input-name">
-                <p>Nama Lengkap</p>
-                <input type="text" />
-              </div>
-              <div className="group-input-phone">
-                <p>Nomer Telepon</p>
-                <input type="text" />
-              </div>
+              <InputField
+                className="group-input-name"
+                title="Nama Lengkap"
+                value={nameInput}
+                onChange={(e) => setNameInput(e.target.value)}
+              />
+              <InputField
+                className="group-input-phone"
+                title="Nomer Telepon"
+                value={phoneInput}
+                onChange={(e) => setPhoneInput(e.target.value)}
+              />
             </div>
 
             <div className="section-3">
@@ -64,7 +74,7 @@ export default function EditProfile() {
                 <div className="group-input-email">
                   <p>Email</p>
                   <div className="input-email">
-                    <p>bety.orydigai@gmail.com</p>
+                    <p>{email}</p>
                     <Link to="/editEmail" className="link-email">
                       <SquarePen className="edit-icon" />
                     </Link>
@@ -73,7 +83,7 @@ export default function EditProfile() {
                 <div className="group-input-password">
                   <p>Kata Sandi</p>
                   <div className="input-password">
-                    <p>******</p>
+                    <p>{"*".repeat(password?.length || 6)}</p>
                     <Link to="/editPassword" className="link-pw">
                       <SquarePen className="edit-icon" />
                     </Link>
@@ -89,20 +99,41 @@ export default function EditProfile() {
               >
                 Batal
               </button>
-              <button className="btn-save">Simpan Perubahan</button>
+              <button
+                className="btn-save"
+                onClick={() => {
+                  dispatch({
+                    type: "UPDATE_PROFILE",
+                    payload: {
+                      fullName: nameInput,
+                      phone: phoneInput,
+                    },
+                  });
+
+                  navigate("/profile");
+                }}
+              >
+                Simpan Perubahan
+              </button>
             </div>
           </div>
         </div>
       </MainLayout>
-     {isShow && ( <div className="confirm-dialog">
-        <div className="dialog-content">
-          <p>Apakah anda yakin ingin keluar?</p>
-          <div className="btn-group">
-            <button className="yes" onClick={() => navigate("/login")}>Ya</button>
-            <button className="no" onClick={() => setIsShow(false)}>Tidak</button>
+      {isShow && (
+        <div className="confirm-dialog">
+          <div className="dialog-content">
+            <p>Apakah anda yakin ingin keluar?</p>
+            <div className="btn-group">
+              <button className="yes" onClick={() => navigate("/")}>
+                Ya
+              </button>
+              <button className="no" onClick={() => setIsShow(false)}>
+                Tidak
+              </button>
+            </div>
           </div>
         </div>
-      </div>)}
+      )}
     </>
   );
 }

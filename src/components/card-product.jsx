@@ -1,6 +1,9 @@
 import { Heart } from "lucide-react";
-import { useEffect, useState } from "react";
-import { Link, useNavigate, useParams } from "react-router";
+import { Link } from "react-router";
+import {
+  useAddToFav,
+  useAddToFavDispatch,
+} from "../context/add-to-fav-context";
 
 export default function CardProduct({
   id,
@@ -9,17 +12,29 @@ export default function CardProduct({
   price,
   imgCard,
 }) {
-  const [isFav, setIsFav] = useState(false);
+  const favDispatch = useAddToFavDispatch();
+  const { fav } = useAddToFav();
+  const isFav = fav.some((item) => item.id === id);
 
-  useEffect(() => {}, [id]);
-
-  function handleFavorite() {
-    if (isFav) {
-      setIsFav(false);
+  const handleFav = () => {
+    if (!isFav) {
+      favDispatch({
+        type: "ADD_TO_FAV",
+        payload: {
+          fav: {
+            id: id,
+          },
+        },
+      });
     } else {
-      setIsFav(true);
+      favDispatch({
+        type: "REMOVE_FROM_FAV",
+        payload: {
+          id: id,
+        },
+      });
     }
-  }
+  };
 
   return (
     <div className="card">
@@ -38,7 +53,7 @@ export default function CardProduct({
           </Link>
 
           <Heart
-            onClick={handleFavorite}
+            onClick={handleFav}
             className={`fav-icon ${isFav ? "active" : ""}`}
           />
         </div>

@@ -1,33 +1,59 @@
 import {
-  BadgeCheck,
   ChevronRightCircle,
   ChevronsRight,
   CircleCheckBig,
-  CircleQuestionMark,
   Heart,
   History,
   Mails,
-  MessageCircle,
   Package,
   Phone,
   ShoppingBag,
   UserPen,
-  UserRound,
-  UserRoundIcon,
+  UserRoundIcon
 } from "lucide-react";
-import MainLayout from "../../layouts/main-layout";
-import "../../assets/style/profile/profile.css";
-import CardProduct from "../../components/card-product";
-import imgCardFav from "../../../src/cardimg1.jpg";
-import CardCheckout from "../../components/card-checkout";
 import { Link, useNavigate } from "react-router";
+import imgCardFav from "../../../src/cardimg1.jpg";
+import "../../assets/style/profile/profile.css";
+import CardCheckout from "../../components/card-checkout";
+import CardProduct from "../../components/card-product";
+import MainLayout from "../../layouts/main-layout";
 
-import cardimgAisyah from "../../../src/img/gamis anak/aisyah.webp";
-import cardimgZaiha from "../../../src/img/gamis anak/zaiha.webp";
-import cardimgShamumkom from "../../../src/img/gamis anak/shanum_kombinasi.webp";
+import { useEffect, useState } from "react";
+import ProductEmpty from "../../components/product-empty";
+import { useAddToFav } from "../../context/add-to-fav-context";
+import { useProfile } from "../../context/profile-context";
+import CardProductDsc from "../../components/card-product-dsc";
 
 export default function Profile() {
   const navigate = useNavigate();
+
+  const { fullName, phone, email } = useProfile();
+
+  const [products, setProducts] = useState([]);
+  const { fav } = useAddToFav();
+
+  const favProducts =
+    products.length > 0
+      ? fav
+          .map((item) => products.find((product) => product.id === item.id))
+          .filter(Boolean).slice(0, 3)
+      : [];
+
+  useEffect(() => {
+    const getProdudcts = async () => {
+      try {
+        const res = await fetch("/sampel-data/products.json");
+        const response = await res.json();
+        setProducts(response);
+      } catch {
+        console.log("Produk gagal diambil");
+      }
+    };
+
+    getProdudcts();
+
+  }, []);
+  console.log(products)
   return (
     <MainLayout>
       <div className="content-profile">
@@ -40,13 +66,13 @@ export default function Profile() {
           <div className="section-1">
             <div className="img-group">
               <div className="profile-img">
-                <UserRoundIcon className="user-icon"/>
+                <UserRoundIcon className="user-icon" />
               </div>
             </div>
             <div className="group-right">
               <div className="group-right-top">
                 <div className="group-name">
-                  <p>Bety Ordiga</p>
+                  <p>{fullName}</p>
                   <CircleCheckBig className="check-icon" />
                 </div>
                 <Link to="/editProfile" className="group-edit">
@@ -58,19 +84,14 @@ export default function Profile() {
                 <div className="group-left">
                   <div className="group-email">
                     <Mails className="email-icon" />
-                    <p>bety.orydigai@gmail.com </p>
+                    <p>{email}</p>
                   </div>
                   <div className="group-phone">
                     <Phone className="phone-icon" />
-                    <p>08389428922</p>
+                    <p>{phone}</p>
                   </div>
                 </div>
-                {/* <div className="group-right">
-                  <div className="lvl-profile">
-                    <p>Lv.1</p>
-                  </div>
-                  <CircleQuestionMark className="question-icon" />
-                </div> */}
+            
               </div>
             </div>
           </div>
@@ -96,28 +117,34 @@ export default function Profile() {
                 <p>Produk Favorit Kamu nih!</p>
               </div>
               <div className="body-fav">
-                {/* <div className="content-card"> */}
-                <CardProduct
-                  category={"Gamis"}
-                  price={"Rp.340,000"}
-                  imgCard={cardimgShamumkom}
-                >
-                  Shanum Komb..
-                </CardProduct>
-                <CardProduct
-                  category={"Gamis"}
-                  price={"Rp.290,000"}
-                  imgCard={cardimgAisyah}
-                >
-                  Gamis Aisyah
-                </CardProduct>
-                <CardProduct
-                  category={"Gamis"}
-                  price={"Rp.140,000"}
-                  imgCard={cardimgZaiha}
-                >
-                  Gamis Zaiha
-                </CardProduct>
+                {favProducts.length > 0 ? (
+                  favProducts.map((item) =>
+                    item.discount ? (
+                      <CardProductDsc
+                        key={item.id}
+                        id={item.id}
+                        dscBadge={`- ${item.discount}%`}
+                        oriPrice={`Rp.${item.originalPrice.toLocaleString("id-ID")}`}
+                        dscPrice={`Rp.${item.price.toLocaleString("id-ID")}`}
+                        imgDisc={item.image}
+                      >
+                        {item.name}
+                      </CardProductDsc>
+                    ) : (
+                      <CardProduct
+                        key={item.id}
+                        id={item.id}
+                        category={item.category}
+                        price={`Rp.${item.price.toLocaleString("id-ID")}`}
+                        imgCard={item.image}
+                      >
+                        {item.name}
+                      </CardProduct>
+                    ),
+                  )
+                ) : (
+                  <ProductEmpty />
+                )}
               </div>
               {/* </div> */}
               <div className="bottom-fav">

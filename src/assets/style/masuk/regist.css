@@ -37,18 +37,27 @@
     gap: 1rem;
   }
 
-  .content-regist > .content-body > .section-1 > div {
+  .content-regist > .content-body > .section-1 > .group-input-phone,
+  .content-regist > .content-body > .section-1 > .group-input-name {
     flex: 1;
   }
 
-  .content-regist > .content-body > .section-1 > div > p {
+  .content-regist > .content-body > .section-1 > .group-input-phone > p,
+  .content-regist > .content-body > .section-1 > .group-input-name > p {
     margin-bottom: 0.5rem;
     color: black;
     font-size: 1rem;
     font-weight: 500;
   }
 
-  .content-regist > .content-body > .section-1 > div > input {
+  .content-regist > .content-body > .section-1 > .group-input-phone > .input-wrapper,
+  .content-regist > .content-body > .section-1 > .group-input-name > .input-wrapper {
+    width: 100%;
+    position: relative;
+  }
+
+  .content-regist > .content-body > .section-1 > .group-input-phone > .input-wrapper > input,
+  .content-regist > .content-body > .section-1 > .group-input-name > .input-wrapper > input {
     width: 100%;
     height: 2.7rem;
     padding: 0 1rem;
@@ -57,6 +66,28 @@
     border: 1px solid #b3b3b3;
     border-radius: 0.3rem;
     box-sizing: border-box;
+  }
+
+  .content-regist
+    > .content-body
+    > .section-1
+    > .group-input-phone
+    > .input-wrapper
+    > .toggle-password,
+  .content-regist
+    > .content-body
+    > .section-1
+    > .group-input-name
+    > .input-wrapper
+    > .toggle-password {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background-color: transparent;
+    border: transparent;
+    color: #000000;
   }
 
   .content-regist > .content-body > .section-bottom {
@@ -142,18 +173,27 @@
     gap: 1rem;
   }
 
-  .content-regist > .content-body > .section-1 > div {
+  .content-regist > .content-body > .section-1 > .group-input-phone,
+  .content-regist > .content-body > .section-1 > .group-input-name {
     flex: 1;
   }
 
-  .content-regist > .content-body > .section-1 > div > p {
+  .content-regist > .content-body > .section-1 > .group-input-phone > p,
+  .content-regist > .content-body > .section-1 > .group-input-name > p {
     margin-bottom: 0.5rem;
     color: black;
     font-size: 1rem;
     font-weight: 500;
   }
 
-  .content-regist > .content-body > .section-1 > div > input {
+  .content-regist > .content-body > .section-1 > .group-input-phone > .input-wrapper,
+  .content-regist > .content-body > .section-1 > .group-input-name > .input-wrapper {
+    width: 100%;
+    position: relative;
+  }
+
+  .content-regist > .content-body > .section-1 > .group-input-phone > .input-wrapper > input,
+  .content-regist > .content-body > .section-1 > .group-input-name > .input-wrapper > input {
     width: 100%;
     height: 2.7rem;
     padding: 0 1rem;
@@ -162,6 +202,28 @@
     border: 1px solid #b3b3b3;
     border-radius: 0.3rem;
     box-sizing: border-box;
+  }
+
+  .content-regist
+    > .content-body
+    > .section-1
+    > .group-input-phone
+    > .input-wrapper
+    > .toggle-password,
+  .content-regist
+    > .content-body
+    > .section-1
+    > .group-input-name
+    > .input-wrapper
+    > .toggle-password {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background-color: transparent;
+    border: transparent;
+    color: #000000;
   }
 
   .content-regist > .content-body > .section-bottom {
@@ -248,26 +310,58 @@
     gap: 1rem;
   }
 
-  .content-regist > .content-body > .section-1 > div {
+  .content-regist > .content-body > .section-1 > .group-input-phone,
+  .content-regist > .content-body > .section-1 > .group-input-name {
     flex: 1;
   }
 
-  .content-regist > .content-body > .section-1 > div > p {
+  .content-regist > .content-body > .section-1 > .group-input-phone > p,
+  .content-regist > .content-body > .section-1 > .group-input-name > p {
     margin-bottom: 0.5rem;
     color: black;
     font-size: 1rem;
     font-weight: 500;
   }
 
-  .content-regist > .content-body > .section-1 > div > input {
+  .content-regist > .content-body > .section-1 > .group-input-phone > .input-wrapper,
+  .content-regist > .content-body > .section-1 > .group-input-name > .input-wrapper {
     width: 100%;
-    height: 2.7rem;
+    position: relative;
+  }
+
+  .content-regist > .content-body > .section-1 > .group-input-phone > .input-wrapper > input,
+  .content-regist > .content-body > .section-1 > .group-input-name > .input-wrapper > input {
+    width: 100%;
+    height: 3rem;
     padding: 0 1rem;
     color: black;
     background-color: white;
     border: 1px solid #b3b3b3;
     border-radius: 0.3rem;
     box-sizing: border-box;
+    font-size: 1rem;
+  }
+
+  .content-regist
+    > .content-body
+    > .section-1
+    > .group-input-phone
+    > .input-wrapper
+    > .toggle-password,
+  .content-regist
+    > .content-body
+    > .section-1
+    > .group-input-name
+    > .input-wrapper
+    > .toggle-password {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background-color: transparent;
+    border: transparent;
+    color: #000000;
   }
 
   .content-regist > .content-body > .section-bottom {

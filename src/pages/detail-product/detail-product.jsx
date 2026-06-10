@@ -1,48 +1,61 @@
-import MainLayout from "../../layouts/main-layout";
-import "../../assets/style/product/detailProduct.css";
 import {
-  CirclePlus,
   Heart,
   MinusIcon,
   PlusIcon,
-  ShoppingCart,
-  Square,
+  ShoppingCart
 } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router";
-import cardimg1 from "../../../src/cardimg1.jpg";
+import "../../assets/style/product/detailProduct.css";
 import ColorPicker from "../../components/color-pick";
+import { useAddToFav, useAddToFavDispatch } from "../../context/add-to-fav-context";
 import { useAddToCartDispatch } from "../../hooks/useAddToCardDispatch";
-import { useAddToCart } from "../../hooks/useAddToCart";
+import MainLayout from "../../layouts/main-layout";
 
 export default function DetailProduct() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(1);
+  const [detailProduct, setDetailProduct] = useState({});
   const params = useParams();
   const productId = Number(params.id);
+  const navigate = useNavigate();
+  const [selectedSize, setSelectedSize] = useState("");
+  const [selectedColor, setSelectedColor] = useState("");
+  const [selectedColorKey, setSelectedColorKey] = useState("");
+  const dispatch = useAddToCartDispatch();
 
-  console.log(productId);
+  const favDispatch = useAddToFavDispatch();
+  const { fav } = useAddToFav();
+  const isFav = fav.some((item) => item.id === detailProduct.id);
+
+  const handleFav = () => {
+    if (!isFav) {
+      favDispatch({
+        type: "ADD_TO_FAV",
+        payload: {
+          fav: {
+          id: detailProduct.id,
+        },
+      },
+    });
+    } else {
+      favDispatch({
+        type: "REMOVE_FROM_FAV",
+        payload: {
+          id: detailProduct.id,
+        },
+      });
+    }
+  };
 
   function handlePlus() {
     setCount(count + 1);
   }
 
   function handleMinus() {
-    if (count > 0) {
+    if (count > 1) {
       setCount(count - 1);
     }
   }
-
-  const navigate = useNavigate();
-
-  const [isFav, setIsFav] = useState(false);
-
-  const [isSize, setISize] = useState("");
-
-  const [selectedColor, setSelectedColor] = useState("");
-
-  const [detailProduct, setDetailProduct] = useState({});
-  const dispatch = useAddToCartDispatch();
-  const {cart} = useAddToCart()
 
   useEffect(() => {
     const getDetail = async () => {
@@ -58,8 +71,17 @@ export default function DetailProduct() {
     getDetail();
   }, [productId]);
 
-  console.log(dispatch);
-  console.log(cart)
+  useEffect(() => {
+    if (detailProduct?.sizes?.length > 0) {
+      setSelectedSize(detailProduct.sizes[0]);
+    }
+
+    if (detailProduct?.colors?.length > 0) {
+      setSelectedColor(detailProduct.colors[0].color);
+      setSelectedColorKey(detailProduct.colors[0].key);
+    }
+  }, [detailProduct]);
+
   return (
     <MainLayout>
       <div className="content-product">
@@ -71,17 +93,17 @@ export default function DetailProduct() {
           <div className="content-body-left">
             <div className="content-picture">
               <div className="main-picture">
-                <img src={cardimg1} alt="" />
+                <img src={detailProduct.image} alt="" />
               </div>
               <div className="picture-group">
                 <div className="small-picture">
-                  <img src={cardimg1} alt="" />
+                  <img src={detailProduct.image} alt="" />
                 </div>
                 <div className="small-picture">
-                  <img src={cardimg1} alt="" />
+                  <img src={detailProduct.image} alt="" />
                 </div>
                 <div className="small-picture">
-                  <img src={cardimg1} alt="" />
+                  <img src={detailProduct.image} alt="" />
                 </div>
               </div>
             </div>
@@ -104,14 +126,14 @@ export default function DetailProduct() {
               <div className="detail-price">
                 {detailProduct.discount ? (
                   <>
-                    <p className="p1">Rp {detailProduct.originalPrice}</p>{" "}
-                    <p className="p2">Rp {detailProduct.price}</p>{" "}
+                    <p className="p1">Rp. {detailProduct.originalPrice?.toLocaleString("id-ID")}</p>{" "}
+                    <p className="p2">Rp. {detailProduct.price?.toLocaleString("id-ID")}</p>{" "}
                     <div className="p3">
                       <p>{detailProduct.discount} %</p>
                     </div>
                   </>
                 ) : (
-                  <p className="p1">Rp {detailProduct.originalPrice}</p>
+                  <p className="p1">Rp. {detailProduct.price?.toLocaleString("id-ID")}</p>
                 )}
               </div>
             </div>
@@ -123,6 +145,7 @@ export default function DetailProduct() {
                     <ColorPicker
                       selectedColor={selectedColor}
                       setSelectedColor={setSelectedColor}
+                      setSelectedColorKey={setSelectedColorKey}
                       color={item.color}
                       colorKey={item.key}
                     />
@@ -146,9 +169,9 @@ export default function DetailProduct() {
                 detailProduct.sizes.map((item, index) => (
                   <div
                     key={index}
-                    className={`size-colomn ${isSize === item ? "active" : ""}`}
+                    className={`size-colomn ${selectedSize === item ? "active" : ""}`}
                     onClick={() => {
-                      setISize(item);
+                      setSelectedSize(item);
                     }}
                   >
                     {item}
@@ -170,27 +193,31 @@ export default function DetailProduct() {
                   <PlusIcon className="plus-cart" />
                 </button>
               </div>
-              <div
+              <button
                 className="add-btn"
                 onClick={() => {
-                  dispacth({
+                  dispatch({
                     type: "ADD_TO_CART",
                     payload: {
                       cart: {
                         id: detailProduct.id,
                         qty: count,
+                        size: selectedSize,
+                        color: selectedColorKey,
                       },
                     },
                   });
+                  setCount(1);
+                  navigate("/cart");
                 }}
               >
                 <ShoppingCart className="add-icon" />
-                <p>Add to cart</p>
-              </div>
+                <p >Add to cart</p>
+              </button>
               <div className="detail-favorite">
                 {/* <Heart className="icon-favorite" /> */}
                 <Heart
-                  onClick={() => setIsFav(!isFav)}
+                  onClick={handleFav}
                   className={`fav-icon ${isFav ? "active" : ""}`}
                 />
               </div>

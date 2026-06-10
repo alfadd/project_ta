@@ -4,9 +4,14 @@ import CardProductDsc from "../card-product-dsc";
 import { filterCard } from "../../utils/filter-card";
 import ProductEmpty from "../product-empty";
 
-export default function ProductAdult() {
+export default function ProductAdult({ search = ""}) {
   const [products, setProducts] = useState([]);
 
+  const filteredProducts = products.filter(
+  (item) =>
+    item?.name?.toLowerCase()?.includes(search.toLowerCase()) ||
+    item?.category?.toLowerCase()?.includes(search.toLowerCase())
+);
   useEffect(() => {
     const getProducts = async () => {
       try {
@@ -21,11 +26,15 @@ export default function ProductAdult() {
     getProducts();
   }, []);
 
-  const gamis = products.filter((item) => item.category === "Gamis");
+  const gamis = filteredProducts.filter((item) => item.category === "Gamis");
 
-  const hijab = products.filter((item) => item.category === "Hijab");
+  const hijab = filteredProducts.filter((item) => item.category === "Hijab");
 
-  const kaosKaki = products.filter((item) => item.category === "Kaos Kaki");
+  const kaosKaki = filteredProducts.filter(
+    (item) => item.category === "Kaos Kaki",
+  );
+
+ 
 
   return (
     <div className="content-body">
@@ -34,7 +43,9 @@ export default function ProductAdult() {
           <p>Gamis</p>
         </div>
 
-        <div className="body-card">{gamis.length > 0 ? filterCard(gamis) : <ProductEmpty />}</div>
+        <div className="body-card">
+          {gamis.length > 0 ? filterCard(gamis) : <ProductEmpty />}
+        </div>
       </div>
 
       <div className="group-product">
@@ -42,7 +53,9 @@ export default function ProductAdult() {
           <p>Hijab</p>
         </div>
 
-        <div className="body-card">{hijab.length > 0 ? filterCard(hijab) : <ProductEmpty />}</div>
+        <div className="body-card">
+          {hijab.length > 0 ? filterCard(hijab) : <ProductEmpty />}
+        </div>
       </div>
 
       <div className="group-product">
@@ -50,9 +63,10 @@ export default function ProductAdult() {
           <p>Kaos Kaki</p>
         </div>
 
-        <div className="body-card">{kaosKaki.length > 0 ? filterCard(kaosKaki) : <ProductEmpty />}</div>
+        <div className="body-card">
+          {kaosKaki.length > 0 ? filterCard(kaosKaki) : <ProductEmpty />}
+        </div>
       </div>
     </div>
   );
 }
-

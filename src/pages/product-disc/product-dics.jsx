@@ -1,30 +1,35 @@
-import MainLayout from "../../layouts/main-layout";
 import {
-  AlarmClock,
   ClockFading,
-  Flower2,
   Heart,
   Search,
   ShoppingCart,
-  User,
   UserRound,
-  Zap,
+  Zap
 } from "lucide-react";
 import { Link } from "react-router";
-import CategoryItemSmall from "../../components/category-item-small";
-import CardProduct from "../../components/card-product";
-import CategoryItemLarge from "../../components/category-item-large";
-import CardProductDsc from "../../components/card-product-dsc";
 import "../../assets/style/product-disc/product-disc.css";
+import CardProductDsc from "../../components/card-product-dsc";
+import MainLayout from "../../layouts/main-layout";
 
-import cardimgHaura from "../../../src/img/gamis anak/gamis_ank_haura.webp"
-import kaoskSekolah from "../../../src/img/kaos kaki/anak_sekolah.webp"
-import cardimgShanum from "../../../src/img/gamis anak/shanum.webp"
-import gamisTsurayya from "../../../src/img/gamis/gamis_tsurayya.webp";
-import hijabNonpetPoni from "../../../src/img/hijab/hijab_nonpet_poni.webp";
-import kaosMotif from "../../../src/img/kaos kaki/motif.webp";
+import { useEffect, useState } from "react";
+import ProductEmpty from "../../components/product-empty";
 
 export default function ProductDisc() {
+  const [productDisc, setProductDisc] = useState([]);
+
+  useEffect(() => {
+    const getProductDisc = async () => {
+      try {
+        const res = await fetch("/sampel-data/products.json");
+        const response = await res.json();
+        setProductDisc(response.filter((item) => item.discount));
+      } catch {
+        console.log("Data gagal diambil");
+      }
+    };
+    getProductDisc();
+  }, []);
+
   return (
     <MainLayout>
       <div className="content-product-disc">
@@ -60,59 +65,22 @@ export default function ProductDisc() {
         </div>
 
         <div className="content-card-disc">
-          <CardProductDsc
-            dscBadge={"- 40%"}
-            oriPrice={"Rp.200,000"}
-            dscPrice={"Rp.150,000"}
-            imgDisc={cardimgHaura}
-          >
-            Gamis Haura
-          </CardProductDsc>
-
-          <CardProductDsc
-            dscBadge={"- 70%"}
-            oriPrice={"Rp.25,000"}
-            dscPrice={"Rp.15,000"}
-            imgDisc={kaoskSekolah}
-          >
-            Sekolah
-          </CardProductDsc>
-
-          <CardProductDsc
-            imgDisc={cardimgShanum}
-            dscBadge={"- 40%"}
-            oriPrice={"Rp.300,000"}
-            dscPrice={"Rp.120,000"}
-          >
-            Gamis Shanum
-          </CardProductDsc>
-
-          <CardProductDsc
-            dscBadge={"- 40%"}
-            oriPrice={"Rp.350,000"}
-            dscPrice={"Rp.250,000"}
-            imgDisc={gamisTsurayya}
-          >
-            Gamis Tsurayya
-          </CardProductDsc>
-
-          <CardProductDsc
-            dscBadge={"- 40%"}
-            oriPrice={"Rp.170,000"}
-            dscPrice={"Rp.120,000"}
-            imgDisc={hijabNonpetPoni}
-          >
-            Non Pet Poni
-          </CardProductDsc>
-
-          <CardProductDsc
-            dscBadge={"- 40%"}
-            oriPrice={"Rp.30,000"}
-            dscPrice={"Rp.18,000"}
-            imgDisc={kaosMotif}
-          >
-            Kaos Kaki Embos
-          </CardProductDsc>
+          {productDisc.length > 0 ? (
+            productDisc.map((item) => (
+              <CardProductDsc
+                key={item.id}
+                id={item.id}
+                dscBadge={`- ${item.discount}%`}
+                oriPrice={`Rp.${item.originalPrice.toLocaleString("id-ID")}`}
+                dscPrice={`Rp.${item.price.toLocaleString("id-ID")}`}
+                imgDisc={item.image}
+              >
+                {item.name}
+              </CardProductDsc>
+            ))
+          ) : (
+            <ProductEmpty />
+          )}
         </div>
       </div>
     </MainLayout>

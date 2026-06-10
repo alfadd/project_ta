@@ -7,14 +7,14 @@
     "price": 240000,
     "stock": 1,
     "material": "Katun",
-    "image": "/img/gamis/gamis_abaya.webp",
+    "image": "/img/gamis/cardimg1.jpg",
     "colors": [
       { "key": "Maroon", "color": "#732018" },
       { "key": "White", "color": "#f5f0f0" },
       { "key": "Black", "color": "#050505" }
     ],
     "sizes": ["S", "M", "L", "XL"],
-    "description": "Gamis Abaya berbahan Cotton yang nyaman digunakan untuk aktivitas sehari-hari."
+    "description": "Gamis Abaya hadir dengan desain syar'i yang anggun dan nyaman digunakan untuk berbagai aktivitas. Terbuat dari bahan katun berkualitas yang lembut, ringan, dan tidak panas saat dikenakan. Potongannya yang longgar memberikan kebebasan bergerak sekaligus tetap menjaga penampilan agar terlihat rapi dan elegan. Cocok digunakan untuk kegiatan sehari-hari, menghadiri acara keluarga, maupun kegiatan ibadah."
   },
   {
     "id": 2,
@@ -30,7 +30,7 @@
       { "key": "Black", "color": "#050505" }
     ],
     "sizes": ["M", "L", "XL"],
-    "description": "Gamis Fathin hadir dengan desain modern dan bahan Cotton yang lembut."
+    "description": "Gamis Fathin dirancang dengan tampilan modern yang tetap mengutamakan kenyamanan. Menggunakan bahan katun yang lembut dan mudah menyerap keringat, sehingga nyaman digunakan sepanjang hari. Detail desain yang sederhana namun elegan membuat gamis ini mudah dipadukan dengan berbagai pilihan hijab dan aksesori. Sangat cocok untuk digunakan dalam kegiatan santai maupun acara semi formal."
   },
   {
     "id": 3,
@@ -46,7 +46,7 @@
       { "key": "Black", "color": "#050505" }
     ],
     "sizes": ["S", "M", "L", "XL"],
-    "description": "Gamis Cardigan dengan desain elegan dan nyaman digunakan."
+    "description": "Gamis Cardigan menawarkan kombinasi desain yang unik dengan sentuhan cardigan yang memberikan kesan lebih stylish dan elegan. Terbuat dari bahan katun yang nyaman, ringan, serta tidak mudah gerah saat digunakan. Modelnya yang simpel membuat gamis ini cocok digunakan untuk berbagai kesempatan, mulai dari aktivitas harian hingga acara bersama keluarga dan sahabat."
   },
   {
     "id": 4,
@@ -57,12 +57,14 @@
     "originalPrice": 350000,
     "discount": 40,
     "stock": 2,
-    "material": "Cotton",
+    "material": "Katun",
     "image": "/img/gamis/gamis_tsurayya.webp",
-    "colors": [{"key" : "Maroon", "color" : "#732018"},
-      {"key" : "White", "color" : "#f5f0f0"}],
+    "colors": [
+      { "key": "Maroon", "color": "#732018" },
+      { "key": "White", "color": "#f5f0f0" }
+    ],
     "sizes": ["M", "L", "XL"],
-    "description": "Gamis Tsurayya dengan desain sederhana namun elegan."
+    "description": "Gamis Tsurayya hadir dengan desain minimalis yang menonjolkan kesan anggun dan berkelas. Dibuat menggunakan bahan katun pilihan yang lembut di kulit dan nyaman dipakai dalam waktu lama. Potongan yang rapi serta detail sederhana menjadikan gamis ini cocok digunakan untuk berbagai acara, baik formal maupun nonformal. Pilihan tepat bagi Anda yang menginginkan tampilan syar'i tanpa mengurangi kesan modern."
   },
   {
     "id": 5,
@@ -71,12 +73,14 @@
     "target": "Dewasa",
     "price": 240000,
     "stock": 4,
-    "material": "Cotton",
+    "material": "Katun",
     "image": "/img/gamis/gamis_ayasha.webp",
-    "colors": [{"key" : "Maroon", "color" : "#732018"},
-      {"key" : "Pink", "color" : "#a67c9f"}],
+    "colors": [
+      { "key": "Maroon", "color": "#732018" },
+      { "key": "Pink", "color": "#a67c9f" }
+    ],
     "sizes": ["S", "M", "L"],
-    "description": "Gamis Ayasha nyaman digunakan sepanjang hari."
+    "description": "Gamis Ayasha dirancang untuk memberikan kenyamanan maksimal tanpa mengesampingkan gaya. Menggunakan bahan katun yang lembut, ringan, dan nyaman digunakan sepanjang hari. Desainnya yang feminin dengan pilihan warna yang menarik membuat gamis ini cocok digunakan untuk berbagai aktivitas, mulai dari kegiatan sehari-hari hingga acara spesial bersama keluarga."
   },
   {
     "id": 6,
@@ -85,14 +89,16 @@
     "target": "Dewasa",
     "price": 240000,
     "stock": 1,
-    "material": "Cotton",
+    "material": "Katun",
     "image": "/img/gamis/gamis_abaya.webp",
-    "colors": [{"key" : "Maroon", "color" : "#f5f0f0"},
-      {"key" : "Pink", "color" : "#a67c9f"}],
+    "colors": [
+      { "key": "Maroon", "color": "#732018" },
+      { "key": "Cream", "color": "#F5E6D3" },
+      { "key": "Black", "color": "#050505" }
+    ],
     "sizes": ["S", "M", "L", "XL"],
-    "description": "Set Gamis Abaya dengan desain sederhana dan elegan."
+    "description": "Set Gamis Abaya hadir dengan desain syar'i yang elegan dan nyaman digunakan. Terbuat dari bahan katun berkualitas yang lembut, ringan, dan cocok dikenakan untuk aktivitas harian maupun acara keluarga."
   },
-
   {
     "id": 7,
     "name": "Non Pet Hijab",
@@ -102,11 +108,13 @@
     "stock": 10,
     "material": "Jersey",
     "image": "/img/hijab/hijab_nonpet.webp",
-    "colors": [{"key" : "Maroon", "color" : "#732018"},
-      {"key" : "Pink", "color" : "#a67c9f"},
-    {"key" : "Cream", "color" : "#ccd1a9"}],
-    "sizes": ["S, M, L, XL"],
-    "description": "Hijab non pet yang nyaman digunakan sehari-hari."
+    "colors": [
+      { "key": "Maroon", "color": "#732018" },
+      { "key": "Dusty Pink", "color": "#D8A7B1" },
+      { "key": "Cream", "color": "#F5E6D3" }
+    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "Hijab Non Pet berbahan jersey yang lembut, adem, dan mudah dibentuk. Cocok digunakan sehari-hari dengan tampilan sederhana namun tetap rapi dan nyaman untuk berbagai aktivitas."
   },
   {
     "id": 8,
@@ -117,11 +125,13 @@
     "stock": 8,
     "material": "Jersey",
     "image": "/img/hijab/hijab_petantem.webp",
-    "colors": [{"key" : "Maroon", "color" : "#060606"},
-      {"key" : "Pink", "color" : "#a67c9f"},
-    {"key" : "Cream", "color" : "#ccd1a9"}],
-    "sizes": ["S, M, L, XL"],
-    "description": "Hijab pet antem dengan desain simpel."
+    "colors": [
+      { "key": "Maroon", "color": "#732018" },
+      { "key": "Mocca", "color": "#A67B5B" },
+      { "key": "Cream", "color": "#F5E6D3" }
+    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "Hijab Pet Antem memiliki desain praktis dan nyaman digunakan sepanjang hari. Bahan jersey yang ringan membuat hijab tetap rapi serta cocok dipadukan dengan berbagai outfit muslimah."
   },
   {
     "id": 9,
@@ -134,11 +144,13 @@
     "stock": 5,
     "material": "Jersey",
     "image": "/img/hijab/hijab_nonpet_poni.webp",
-    "colors": [{"key" : "Maroon", "color" : "#060606"},
-      {"key" : "Pink", "color" : "#a67c9f"},
-    {"key" : "Cream", "color" : "#ccd1a9"}],
-    "sizes": ["S, M, L, XL"],
-    "description": "Hijab non pet poni dengan desain modern."
+    "colors": [
+      { "key": "Maroon", "color": "#732018" },
+      { "key": "Dusty Pink", "color": "#D8A7B1" },
+      { "key": "Cream", "color": "#F5E6D3" }
+    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "Hijab Non Pet Poni hadir dengan model modern yang memberikan tampilan lebih stylish. Bahan jersey premium terasa lembut di kulit dan nyaman digunakan untuk kegiatan sehari-hari."
   },
   {
     "id": 10,
@@ -149,13 +161,14 @@
     "stock": 6,
     "material": "Jersey",
     "image": "/img/hijab/hijab_fk.webp",
-    "colors": [{"key" : "Maroon", "color" : "#060606"},
-      {"key" : "Pink", "color" : "#a67c9f"},
-    {"key" : "Cream", "color" : "#ccd1a9"}],
-    "sizes": ["S, M, L, XL"],
-    "description": "Hijab FK yang nyaman digunakan sehari-hari."
+    "colors": [
+      { "key": "Black", "color": "#060606" },
+      { "key": "Mocca", "color": "#A67B5B" },
+      { "key": "Cream", "color": "#F5E6D3" }
+    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "Hijab FK dibuat dari bahan jersey berkualitas yang nyaman dan mudah dibentuk. Desainnya sederhana namun tetap elegan sehingga cocok digunakan untuk berbagai kesempatan."
   },
-
   {
     "id": 11,
     "name": "Kaos Kaki Wudhu",
@@ -165,11 +178,13 @@
     "stock": 15,
     "material": "Katun",
     "image": "/img/kaos kaki/wudhu.webp",
-    "colors": [{"key" : "Maroon", "color" : "#060606"},
-      {"key" : "Pink", "color" : "#a67c9f"},
-    {"key" : "Cream", "color" : "#ccd1a9"}],
-    "sizes": ["S, M, L, XL"],
-    "description": "Kaos kaki wudhu praktis dan nyaman."
+    "colors": [
+      { "key": "Black", "color": "#060606" },
+      { "key": "Grey", "color": "#8B8B8B" },
+      { "key": "Cream", "color": "#F5E6D3" }
+    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "Kaos Kaki Wudhu dirancang praktis untuk memudahkan berwudhu tanpa perlu melepas seluruh kaos kaki. Bahan katun yang lembut memberikan kenyamanan saat digunakan sepanjang hari."
   },
   {
     "id": 12,
@@ -180,11 +195,13 @@
     "stock": 20,
     "material": "Katun",
     "image": "/img/kaos kaki/grey.webp",
-    "colors": ["Grey"],
-    "sizes": [{"key" : "Maroon", "color" : "#060606"},
-      {"key" : "Pink", "color" : "#a67c9f"},
-    {"key" : "Cream", "color" : "#ccd1a9"}],
-    "description": "Kaos kaki non jempol dengan bahan lembut."
+    "colors": [
+      { "key": "Black", "color": "#060606" },
+      { "key": "Grey", "color": "#8B8B8B" },
+      { "key": "Cream", "color": "#F5E6D3" }
+    ],
+    "sizes": ["S", "M", "L"],
+    "description": "Kaos Kaki Non Jempol Soka menggunakan bahan katun yang lembut dan nyaman. Desainnya sederhana dengan sirkulasi udara yang baik sehingga cocok untuk penggunaan sehari-hari."
   },
   {
     "id": 13,
@@ -195,11 +212,13 @@
     "stock": 20,
     "material": "Katun",
     "image": "/img/kaos kaki/cream-telapak-hitam.webp",
-    "colors": ["Cream"],
-    "sizes": [{"key" : "Maroon", "color" : "#060606"},
-      {"key" : "Pink", "color" : "#a67c9f"},
-    {"key" : "Cream", "color" : "#ccd1a9"}],
-    "description": "Kaos kaki telapak hitam yang nyaman digunakan."
+    "colors": [
+      { "key": "Black", "color": "#060606" },
+      { "key": "Grey", "color": "#8B8B8B" },
+      { "key": "Cream", "color": "#F5E6D3" }
+    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "Kaos Kaki Telapak Hitam memiliki desain praktis dengan bagian telapak berwarna gelap sehingga tidak mudah terlihat kotor. Nyaman digunakan untuk aktivitas sehari-hari."
   },
   {
     "id": 14,
@@ -212,11 +231,13 @@
     "stock": 10,
     "material": "Katun",
     "image": "/img/kaos kaki/motif.webp",
-    "colors": ["Random"],
-    "sizes": [{"key" : "Maroon", "color" : "#060606"},
-      {"key" : "Pink", "color" : "#a67c9f"},
-    {"key" : "Cream", "color" : "#ccd1a9"}],
-    "description": "Kaos kaki embos dengan motif menarik."
+    "colors": [
+      { "key": "Maroon", "color": "#732018" },
+      { "key": "Dusty Pink", "color": "#D8A7B1" },
+      { "key": "Cream", "color": "#F5E6D3" }
+    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "Kaos Kaki Embos hadir dengan motif menarik dan tampilan yang lebih elegan. Bahan katun berkualitas memberikan kenyamanan serta cocok digunakan dalam berbagai aktivitas."
   },
   {
     "id": 15,
@@ -227,11 +248,13 @@
     "stock": 12,
     "material": "Katun",
     "image": "/img/kaos kaki/antislip.webp",
-    "colors": [{"key" : "Maroon", "color" : "#060606"},
-      {"key" : "Pink", "color" : "#a67c9f"},
-    {"key" : "Cream", "color" : "#ccd1a9"}],
-    "sizes": ["S, M, L, XL"],
-    "description": "Kaos kaki antislip yang aman digunakan."
+    "colors": [
+      { "key": "Maroon", "color": "#732018" },
+      { "key": "Mocca", "color": "#A67B5B" },
+      { "key": "Cream", "color": "#F5E6D3" }
+    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "Kaos Kaki Antislip dilengkapi fitur anti licin pada bagian bawah untuk memberikan keamanan lebih saat digunakan. Tetap nyaman, ringan, dan cocok dipakai sehari-hari."
   },
 
   {
@@ -243,43 +266,49 @@
     "originalPrice": 300000,
     "discount": 40,
     "stock": 5,
-    "material": "Cotton",
+    "material": "Katun",
     "image": "/img/gamis anak/shanum.webp",
-    "colors": ["Pink"],
-    "sizes": [{"key" : "Maroon", "color" : "#060606"},
-      {"key" : "Pink", "color" : "#a67c9f"},
-    {"key" : "Cream", "color" : "#ccd1a9"}],
-    "description": "Gamis anak Shanum dengan desain lucu dan nyaman."
+    "colors": [
+      { "key": "Maroon", "color": "#732018" },
+      { "key": "Dusty Pink", "color": "#D8A7B1" },
+      { "key": "Cream", "color": "#F5E6D3" }
+    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "Gamis Shanum hadir dengan desain manis dan nyaman untuk anak. Terbuat dari bahan katun yang lembut, ringan, dan cocok digunakan untuk kegiatan sehari-hari maupun acara keluarga."
   },
   {
     "id": 17,
-    "name": "Gamis Aisyah",
+    "name": "Gamis Hilya",
     "category": "Gamis",
     "target": "Anak",
     "price": 290000,
     "stock": 3,
-    "material": "Cotton",
+    "material": "Crincle",
     "image": "/img/gamis anak/aisyah.webp",
-    "colors": [{"key" : "Maroon", "color" : "#060606"},
-      {"key" : "Pink", "color" : "#a67c9f"},
-    {"key" : "Cream", "color" : "#ccd1a9"}],
+    "colors": [
+      { "key": "Mocca", "color": "#A67B5B" },
+      { "key": "Dusty Pink", "color": "#D8A7B1" },
+      { "key": "Cream", "color": "#F5E6D3" }
+    ],
     "sizes": ["S", "M", "L"],
-    "description": "Gamis anak Aisyah dengan bahan nyaman."
+    "description": "Gamis Hilya dibuat dari bahan crincle yang adem dan nyaman dipakai. Modelnya sederhana namun tetap cantik sehingga cocok untuk aktivitas maupun acara spesial anak."
   },
   {
     "id": 18,
-    "name": "Gamis Zaiha",
+    "name": "Gamis Alishba",
     "category": "Gamis",
     "target": "Anak",
     "price": 140000,
     "stock": 4,
-    "material": "Cotton",
+    "material": "Crincle",
     "image": "/img/gamis anak/zaiha.webp",
-    "colors": [{"key" : "Maroon", "color" : "#060606"},
-      {"key" : "Pink", "color" : "#a67c9f"},
-    {"key" : "Cream", "color" : "#ccd1a9"}],
+    "colors": [
+      { "key": "Maroon", "color": "#732018" },
+      { "key": "Mocca", "color": "#A67B5B" },
+      { "key": "Cream", "color": "#F5E6D3" }
+    ],
     "sizes": ["S", "M", "L"],
-    "description": "Gamis anak Zaiha yang elegan dan nyaman."
+    "description": "Gamis Alishba memiliki desain anggun dengan bahan crincle yang ringan. Nyaman digunakan sepanjang hari dan memberikan tampilan rapi serta menarik untuk anak."
   },
   {
     "id": 19,
@@ -288,13 +317,15 @@
     "target": "Anak",
     "price": 340000,
     "stock": 2,
-    "material": "Cotton",
+    "material": "Katun",
     "image": "/img/gamis anak/shanum_kombinasi.webp",
-    "colors": [{"key" : "Maroon", "color" : "#060606"},
-      {"key" : "Pink", "color" : "#a67c9f"},
-    {"key" : "Cream", "color" : "#ccd1a9"}],
+    "colors": [
+      { "key": "Black", "color": "#060606" },
+      { "key": "Dusty Pink", "color": "#D8A7B1" },
+      { "key": "Cream", "color": "#F5E6D3" }
+    ],
     "sizes": ["S", "M", "L"],
-    "description": "Gamis Shanum kombinasi dengan desain menarik."
+    "description": "Shanum Kombinasi hadir dengan perpaduan warna yang menarik dan desain modern. Bahan katun yang lembut membuat anak tetap nyaman saat beraktivitas."
   },
   {
     "id": 20,
@@ -303,13 +334,15 @@
     "target": "Anak",
     "price": 209000,
     "stock": 6,
-    "material": "Cotton",
+    "material": "Katun",
     "image": "/img/gamis anak/gamis_ank_nurul.webp",
-    "colors": [{"key" : "Maroon", "color" : "#060606"},
-      {"key" : "Pink", "color" : "#a67c9f"},
-    {"key" : "Cream", "color" : "#ccd1a9"}],
+    "colors": [
+      { "key": "Black", "color": "#060606" },
+      { "key": "Mocca", "color": "#A67B5B" },
+      { "key": "Cream", "color": "#F5E6D3" }
+    ],
     "sizes": ["S", "M", "L"],
-    "description": "Gamis anak Nurul yang nyaman digunakan."
+    "description": "Gamis Nurul dirancang dengan model sederhana namun elegan. Menggunakan bahan katun yang nyaman sehingga cocok dipakai untuk kegiatan sehari-hari maupun acara tertentu."
   },
   {
     "id": 21,
@@ -318,13 +351,15 @@
     "target": "Anak",
     "price": 400000,
     "stock": 3,
-    "material": "Cotton",
+    "material": "Wolpeach",
     "image": "/img/gamis anak/syaima.webp",
-    "colors": [{"key" : "Maroon", "color" : "#060606"},
-      {"key" : "Pink", "color" : "#a67c9f"},
-    {"key" : "Cream", "color" : "#ccd1a9"}],
+    "colors": [
+      { "key": "Black", "color": "#060606" },
+      { "key": "Dusty Pink", "color": "#D8A7B1" },
+      { "key": "Cream", "color": "#F5E6D3" }
+    ],
     "sizes": ["S", "M", "L"],
-    "description": "Set gamis anak Syaima dengan model elegan."
+    "description": "Set Gamis Syaima tampil elegan dengan bahan wolpeach yang halus dan nyaman. Cocok digunakan untuk menghadiri acara keluarga, pengajian, maupun momen spesial lainnya."
   },
   {
     "id": 22,
@@ -333,13 +368,15 @@
     "target": "Anak",
     "price": 220000,
     "stock": 5,
-    "material": "Cotton",
+    "material": "Crincle",
     "image": "/img/gamis anak/jovanka.webp",
-    "colors": [{"key" : "Maroon", "color" : "#060606"},
-      {"key" : "Pink", "color" : "#a67c9f"},
-    {"key" : "Cream", "color" : "#ccd1a9"}],
+    "colors": [
+      { "key": "Black", "color": "#060606" },
+      { "key": "Mocca", "color": "#A67B5B" },
+      { "key": "Cream", "color": "#F5E6D3" }
+    ],
     "sizes": ["S", "M", "L"],
-    "description": "Gamis anak Jovanka dengan desain sederhana."
+    "description": "Gamis Jovanka memiliki desain simpel dengan bahan crincle yang nyaman dipakai. Memberikan tampilan yang rapi dan tetap mendukung aktivitas anak sepanjang hari."
   },
   {
     "id": 23,
@@ -350,15 +387,16 @@
     "originalPrice": 200000,
     "discount": 40,
     "stock": 4,
-    "material": "Cotton",
+    "material": "Katun",
     "image": "/img/gamis anak/gamis_ank_haura.webp",
-    "colors": [{"key" : "Maroon", "color" : "#060606"},
-      {"key" : "Pink", "color" : "#a67c9f"},
-    {"key" : "Cream", "color" : "#ccd1a9"}],
+    "colors": [
+      { "key": "Maroon", "color": "#732018" },
+      { "key": "Dusty Pink", "color": "#D8A7B1" },
+      { "key": "Cream", "color": "#F5E6D3" }
+    ],
     "sizes": ["S", "M", "L"],
-    "description": "Gamis anak Haura dengan model cantik."
+    "description": "Gamis Haura hadir dengan model cantik dan bahan katun yang lembut. Cocok digunakan anak untuk berbagai kegiatan dengan kenyamanan yang tetap terjaga."
   },
-
   {
     "id": 24,
     "name": "Anti Slip",
@@ -368,11 +406,13 @@
     "stock": 20,
     "material": "Katun",
     "image": "/img/kaos kaki/anak_slip.webp",
-    "colors": [{"key" : "Maroon", "color" : "#060606"},
-      {"key" : "Pink", "color" : "#a67c9f"},
-    {"key" : "Cream", "color" : "#ccd1a9"}],
-    "sizes": ["S, M, L, XL"],
-    "description": "Kaos kaki anak anti slip."
+    "colors": [
+      { "key": "Maroon", "color": "#732018" },
+      { "key": "Sky Blue", "color": "#87CEEB" },
+      { "key": "Cream", "color": "#F5E6D3" }
+    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "Kaos kaki Anti Slip dilengkapi bagian bawah anti licin yang membantu anak bergerak lebih aman. Bahan katunnya lembut dan nyaman digunakan setiap hari."
   },
   {
     "id": 25,
@@ -383,11 +423,13 @@
     "stock": 20,
     "material": "Katun",
     "image": "/img/kaos kaki/anak_motif_love.webp",
-    "colors": [{"key" : "Maroon", "color" : "#060606"},
-      {"key" : "Pink", "color" : "#a67c9f"},
-    {"key" : "Cream", "color" : "#ccd1a9"}],
-    "sizes": ["S, M, L, XL"],
-    "description": "Kaos kaki anak motif love."
+    "colors": [
+      { "key": "Dusty Pink", "color": "#D8A7B1" },
+      { "key": "Sky Blue", "color": "#87CEEB" },
+      { "key": "Cream", "color": "#F5E6D3" }
+    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "Kaos kaki Corak Love memiliki motif hati yang lucu dan menarik. Cocok untuk anak-anak dengan bahan katun yang lembut serta nyaman digunakan."
   },
   {
     "id": 26,
@@ -398,11 +440,13 @@
     "stock": 20,
     "material": "Katun",
     "image": "/img/kaos kaki/anak_motif_bunga.webp",
-    "colors": [{"key" : "Maroon", "color" : "#060606"},
-      {"key" : "Pink", "color" : "#a67c9f"},
-    {"key" : "Cream", "color" : "#ccd1a9"}],
-    "sizes": ["S, M, L, XL"],
-    "description": "Kaos kaki anak motif bunga."
+    "colors": [
+      { "key": "Lavender", "color": "#BFA2DB" },
+      { "key": "Dusty Pink", "color": "#D8A7B1" },
+      { "key": "Cream", "color": "#F5E6D3" }
+    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "Kaos kaki Motif Bunga hadir dengan desain ceria yang disukai anak-anak. Terbuat dari bahan katun yang nyaman dan cocok digunakan untuk berbagai aktivitas."
   },
   {
     "id": 27,
@@ -415,10 +459,12 @@
     "stock": 20,
     "material": "Katun",
     "image": "/img/kaos kaki/anak_sekolah.webp",
-    "colors": [{"key" : "Maroon", "color" : "#060606"},
-      {"key" : "Pink", "color" : "#a67c9f"},
-    {"key" : "Cream", "color" : "#ccd1a9"}],
-    "sizes": ["S, M, L, XL"],
-    "description": "Kaos kaki sekolah anak."
+    "colors": [
+      { "key": "White", "color": "#F8F8F8" },
+      { "key": "Grey", "color": "#8B8B8B" },
+      { "key": "Black", "color": "#060606" }
+    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "Kaos kaki Sekolah dibuat khusus untuk penggunaan harian anak di sekolah. Bahan katun yang lembut dan nyaman membantu menjaga kenyamanan sepanjang aktivitas belajar."
   }
 ]

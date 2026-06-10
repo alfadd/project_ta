@@ -1,17 +1,38 @@
 import { ChevronLeft, HandCoins, ShoppingBag } from "lucide-react";
-import MainLayout from "../../layouts/main-layout";
-import "../../assets/style/checkout/checkout.css";
-import cardImg from "../../../src/cardimg1.jpg";
-import CardCheckout from "../../components/card-checkout";
 import { useNavigate } from "react-router";
+import "../../assets/style/checkout/checkout.css";
+import CardCheckout from "../../components/card-checkout";
+import MainLayout from "../../layouts/main-layout";
 
-import gamisSet from "../../../src/img/gamis/gamis_abaya.webp";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useTotalPrice } from "../../context/total-price-context";
+import { useTotalQty } from "../../context/total-qty-context";
+import { useAddToCart } from "../../hooks/useAddToCart";
 
 export default function Checkout() {
   const navigate = useNavigate();
-
   const [isPayment, setIsPayment] = useState("");
+
+  const { cart } = useAddToCart();
+  const { total } = useTotalPrice();
+  const { totalQty } = useTotalQty();
+
+  const ongkir = 10000;
+  const ppn = total * 0.11;
+  const grandTotal = total + ongkir + ppn;
+
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const getProducts = async () => {
+      const res = await fetch("/sampel-data/products.json");
+      const data = await res.json();
+
+      setProducts(data);
+    };
+
+    getProducts();
+  }, []);
   return (
     <MainLayout>
       <div className="content-checkout">
@@ -104,48 +125,49 @@ export default function Checkout() {
           <div className="section-right">
             <div className="section-1">
               <p>Ringkasan Pesanan</p>
+              {cart.map((item) => {
+                const product = products.find(
+                  (product) => product.id === item.id,
+                );
 
-              <CardCheckout
-                imgCheckout={cardImg}
-                sizeCheckout={"XL, Maroon"}
-                qtyCheckout={"Quantity : 1"}
-                categoryCheckout={"Gamis"}
-                priceCheckout={"Rp. 250,000"}
-              >
-                Set Gamis Abaya
-              </CardCheckout>
+                if (!product) return null;
 
-              <CardCheckout
-                imgCheckout={gamisSet}
-                sizeCheckout={"XL, Hitam"}
-                qtyCheckout={"Quantity : 1"}
-                categoryCheckout={"Gamis"}
-                priceCheckout={"Rp. 250,000"}
-              >
-                Set Gamis Abaya
-              </CardCheckout>
+                return (
+                  <CardCheckout
+                    key={item.id}
+                    imgCheckout={product.image}
+                    sizeCheckout={item.size}
+                    qtyCheckout={`Quantity : ${item.qty}`}
+                    categoryCheckout={product.category}
+                    priceCheckout={`Rp. ${product.price.toLocaleString("id-ID")}`}
+                    color={item.color}
+                  >
+                    {product.name}
+                  </CardCheckout>
+                );
+              })}
 
               <div className="detail-price">
                 <div className="subtotal-group">
                   <p>Subtotal</p>
-                  <p>Rp. 500,000</p>
+                  <p>Rp. {total.toLocaleString("id-ID")}</p>
                 </div>
                 <div className="item-group">
                   <p>Qty</p>
-                  <p>2pcs</p>
+                  <p>{totalQty}pcs</p>
                 </div>
                 <div className="ongkir-group">
                   <p>Ongkos Kirim</p>
-                  <p>Rp. 10,000</p>
+                  <p>Rp. {ongkir.toLocaleString("id-ID")}</p>
                 </div>
                 <div className="ppn-group">
                   <p>PPn</p>
-                  <p>Rp. 15,000</p>
+                  <p>Rp. {ppn.toLocaleString("id-ID")}</p>
                 </div>
               </div>
               <div className="total-group">
                 <p>Total</p>
-                <p>Rp. 525,000</p>
+                <p>Rp. {grandTotal.toLocaleString("id-ID")}</p>
               </div>
               <div className="payment-btn">
                 <button onClick={() => navigate("/orderSuccess")}>

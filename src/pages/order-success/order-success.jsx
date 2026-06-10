@@ -15,11 +15,11 @@ export default function OrderSuccess() {
         <div className="section-bottom">
           <p className="head">Pesanan Anda Berhasil Dibuat</p>
           <p className="sub-head">
-            Terima kasih telah berbelanja di Ummu Afifa Collection! 
+            Terima kasih telah berbelanja di Ummu Afifa Collection!
           </p>
           <p className="sub-head1">Pesanan Anda sedang kami proses ^^</p>
 
-          <button onClick={() => navigate("/")} >Kembali ke Beranda</button>
+          <button onClick={() => navigate("/home")}>Kembali ke Beranda</button>
         </div>
       </div>
     </MainLayout>

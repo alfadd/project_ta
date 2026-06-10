@@ -4,8 +4,14 @@ import CardProductDsc from "../card-product-dsc";
 import { filterCard } from "../../utils/filter-card";
 import ProductEmpty from "../product-empty";
 
-export default function ProductChild() {
+export default function ProductChild({ search = ""}) {
   const [products, setProducts] = useState([]);
+
+  const filteredProducts = products.filter(
+  (item) =>
+    item?.name?.toLowerCase()?.includes(search.toLowerCase()) ||
+    item?.category?.toLowerCase()?.includes(search.toLowerCase())
+);
 
   useEffect(() => {
     // function get product
@@ -22,9 +28,11 @@ export default function ProductChild() {
     getProducts();
   }, []);
 
-  const gamis = products.filter((item) => item.category === "Gamis");
+  const gamis = filteredProducts.filter((item) => item.category === "Gamis");
 
-  const kaosKaki = products.filter((item) => item.category === "Kaos Kaki");
+  const kaosKaki = filteredProducts.filter(
+    (item) => item.category === "Kaos Kaki",
+  );
 
   return (
     <div className="content-body">

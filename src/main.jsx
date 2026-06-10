@@ -9,7 +9,6 @@ import DetailProduct from "./pages/detail-product/detail-product.jsx";
 import Checkout from "./pages/checkout/checkout.jsx";
 import Profile from "./pages/profile/profile.jsx";
 import Favorite from "./pages/favorite/favorite.jsx";
-import Coba from "./pages/coba.jsx";
 import HistoryOrder from "./pages/history-order/history-order.jsx";
 import DetailOrder from "./pages/deatail-order/detail-order.jsx";
 import EditProfile from "./pages/profile/edit-profile.jsx";
@@ -20,7 +19,11 @@ import AllProduct from "./pages/all-products/all-product.jsx";
 import ProductDisc from "./pages/product-disc/product-dics.jsx";
 import Regist from "./pages/masuk/regist.jsx";
 import Login from "./pages/masuk/login.jsx";
-import { AddToCartProvider } from "./context/add-to-card-provider.jsx";
+import { AddToCartProvider } from "./context/add-to-cart-provider.jsx";
+import { TotalPriceProvider } from "./context/total-price-context.jsx";
+import { TotalQtyProvider } from "./context/total-qty-context.jsx";
+import { AddToFavProvider } from "./context/add-to-fav-context.jsx";
+import { ProfileProvider } from "./context/profile-context.jsx";
 
 const router = createBrowserRouter([
   {
@@ -29,12 +32,12 @@ const router = createBrowserRouter([
   },
 
   {
-    path: "/login",
+    path: "/",
     element: <Login />,
   },
 
   {
-    path: "/",
+    path: "/home",
     element: <Home />,
   },
 
@@ -102,17 +105,20 @@ const router = createBrowserRouter([
     path: "/productDisc",
     element: <ProductDisc />,
   },
-
-  {
-    path: "/coba",
-    element: <Coba />,
-  },
 ]);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <AddToCartProvider>
-      <RouterProvider router={router} />
+      <TotalPriceProvider>
+        <TotalQtyProvider>
+          <ProfileProvider>
+            <AddToFavProvider>
+              <RouterProvider router={router} />
+            </AddToFavProvider>
+          </ProfileProvider>
+        </TotalQtyProvider>
+      </TotalPriceProvider>
     </AddToCartProvider>
   </StrictMode>,
 );

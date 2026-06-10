@@ -15,13 +15,6 @@ import CardProductDsc from "../../components/card-product-dsc";
 import CategoryItemLarge from "../../components/category-item-large";
 import MainLayout from "../../layouts/main-layout";
 
-import gamisCardi from "../../../src/img/gamis/gamis_cardi.webp";
-
-import cardimgHaura from "../../../src/img/gamis anak/gamis_ank_haura.webp";
-import cardimgShanum from "../../../src/img/gamis anak/shanum.webp";
-import gamisTsurayya from "../../../src/img/gamis/gamis_tsurayya.webp";
-import hijabNonpetPoni from "../../../src/img/hijab/hijab_nonpet_poni.webp";
-import kaoskSekolah from "../../../src/img/kaos kaki/anak_sekolah.webp";
 import { useEffect, useState } from "react";
 import ProductEmpty from "../../components/product-empty";
 
@@ -29,6 +22,17 @@ export default function Home() {
   const navigate = useNavigate();
   const [productRec, setProductRec] = useState([]);
   const [productDisc, setProductDisc] = useState([]);
+  const [search, setSearch] = useState("");
+
+
+  const handleSearch = () => {
+    if (!search.trim()) {
+      navigate("/allProduct");
+      return;
+    }
+
+    navigate(`/allProduct?search=${encodeURIComponent(search)}`);
+  };
 
   useEffect(() => {
     const getProducts = async () => {
@@ -45,15 +49,25 @@ export default function Home() {
     getProducts();
   }, []);
 
-  console.log(productRec)
+  console.log(productRec);
 
   return (
     <MainLayout>
       <div id="home" className="home">
         <div className="header-home">
           <div className="input-search">
-            <input type="text" placeholder="Cari produk yang kamu mau!" />
-            <button>
+            <input
+              type="text"
+              placeholder="Cari produk yang kamu mau!"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  handleSearch();
+                }
+              }}
+            />
+            <button onClick={handleSearch}>
               <Search className="icon-search" />
             </button>
           </div>
@@ -71,9 +85,7 @@ export default function Home() {
         </div>
 
         <div className="content-home">
-          {/* <div className="picture-menu"> */}
           <img className="picture-menu" src="header-img.png" alt="" />
-          {/* </div> */}
 
           <div className="content-categories">
             <div className="body-categories">
@@ -107,20 +119,35 @@ export default function Home() {
           </div>
 
           <div className="content-card">
-            {productRec.length > 0 ? productRec.map((item) => (
-              <CardProduct
-                key={item.id}
-                id={item.id}
-                category={item.category}
-                price={`Rp.${item.price.toLocaleString("id-ID")}`}
-                imgCard={item.image}
-              >
-                {item.name}
-              </CardProduct>
-            )): <ProductEmpty />}
+            {productRec.length > 0 ? (
+              productRec.map((item) =>
+                item.discount ? (
+                  <CardProductDsc
+                    key={item.id}
+                    id={item.id}
+                    dscBadge={`- ${item.discount}%`}
+                    oriPrice={`Rp.${item.originalPrice.toLocaleString("id-ID")}`}
+                    dscPrice={`Rp.${item.price.toLocaleString("id-ID")}`}
+                    imgDisc={item.image}
+                  >
+                    {item.name}
+                  </CardProductDsc>
+                ) : (
+                  <CardProduct
+                    key={item.id}
+                    id={item.id}
+                    category={item.category}
+                    price={`Rp.${item.price.toLocaleString("id-ID")}`}
+                    imgCard={item.image}
+                  >
+                    {item.name}
+                  </CardProduct>
+                ),
+              )
+            ) : (
+              <ProductEmpty />
+            )}
           </div>
-
-          {/* <div className="picture-sale"></div> */}
 
           <div onClick={() => navigate("/productDisc")} className="flashsale">
             <div className="group-left">
@@ -143,18 +170,22 @@ export default function Home() {
           </div>
 
           <div className="content-card-disc">
-            {productDisc.length > 0 ? productDisc.map((item) => (
-              <CardProductDsc
-              key={item.id}
-              id={item.id}
-                dscBadge={`- ${item.discount}%`}
-                oriPrice={`Rp.${item.originalPrice.toLocaleString("id-ID")}`}
-                dscPrice={`Rp.${item.price.toLocaleString("id-ID")}`}
-                imgDisc={item.image}
-              >
-                {item.name}
-              </CardProductDsc>
-            )): <ProductEmpty />}
+            {productDisc.length > 0 ? (
+              productDisc.map((item) => (
+                <CardProductDsc
+                  key={item.id}
+                  id={item.id}
+                  dscBadge={`- ${item.discount}%`}
+                  oriPrice={`Rp.${item.originalPrice.toLocaleString("id-ID")}`}
+                  dscPrice={`Rp.${item.price.toLocaleString("id-ID")}`}
+                  imgDisc={item.image}
+                >
+                  {item.name}
+                </CardProductDsc>
+              ))
+            ) : (
+              <ProductEmpty />
+            )}
           </div>
         </div>
       </div>

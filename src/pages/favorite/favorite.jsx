@@ -4,34 +4,39 @@ import "../../assets/style/favorite/favorite.css";
 
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
+import { useAddToFav } from "../../context/add-to-fav-context";
+import CardProduct from "../../components/card-product";
+
+import CardProductDsc from "../../components/card-product-dsc";
+import ProductEmpty from "../../components/product-empty";
 
 export default function Favorite() {
   const navigate = useNavigate();
+  const [products, setProducts] = useState([]);
+  const { fav } = useAddToFav();
 
-  const [favorites, setFavorites] = useState([]);
+  const favProducts =
+    products.length > 0
+      ? fav
+          .map((item) => products.find((product) => product.id === item.id))
+          .filter(Boolean)
+      : [];
 
   useEffect(() => {
-    const data =
-      JSON.parse(
-        localStorage.getItem("favorites")
-      ) || [];
+    const getProdudcts = async () => {
+      try {
+        const res = await fetch("/sampel-data/products.json");
+        const response = await res.json();
+        setProducts(response);
+      } catch {
+        console.log("Produk gagal diambil");
+      }
+    };
 
-    setFavorites(data);
+    getProdudcts();
   }, []);
 
-  function handleRemove(id) {
-    const newFavorites =
-      favorites.filter(
-        (item) => item.id !== id
-      );
-
-    setFavorites(newFavorites);
-
-    localStorage.setItem(
-      "favorites",
-      JSON.stringify(newFavorites)
-    );
-  }
+  console.log(favProducts);
 
   return (
     <MainLayout>
@@ -41,57 +46,41 @@ export default function Favorite() {
           <p>Favorite Kamu nih!</p>
         </div>
 
-        <div
-          onClick={() => navigate(-1)}
-          className="group-home"
-        >
+        <div onClick={() => navigate(-1)} className="group-home">
           <ChevronLeft className="icon-chevron" />
           <span>Kembali</span>
         </div>
 
         <div className="body-favorite">
           <div className="section-top">
-
-            {favorites.map((item) => (
-              <div
-                key={item.id}
-                className="card"
-              >
-                <div className="card-header">
-                  <div className="tagline">
-                    <p>
-                      {item.category}
-                    </p>
-                  </div>
-
-                  <img
-                    className="card-img"
-                    src={item.image}
-                    alt=""
-                  />
-                </div>
-
-                <div className="card-body">
-                  <div className="body-1">
-                    <h5 className="title">
-                      {item.name}
-                    </h5>
-
-                    <Heart
-                      className="fav-icon active"
-                      onClick={() =>
-                        handleRemove(item.id)
-                      }
-                    />
-                  </div>
-
-                  <h5 className="price">
-                    {item.price}
-                  </h5>
-                </div>
-              </div>
-            ))}
-
+            {favProducts.length > 0 ? (
+              favProducts.map((item) =>
+                item.discount ? (
+                  <CardProductDsc
+                    key={item.id}
+                    id={item.id}
+                    dscBadge={`- ${item.discount}%`}
+                    oriPrice={`Rp.${item.originalPrice.toLocaleString("id-ID")}`}
+                    dscPrice={`Rp.${item.price.toLocaleString("id-ID")}`}
+                    imgDisc={item.image}
+                  >
+                    {item.name}
+                  </CardProductDsc>
+                ) : (
+                  <CardProduct
+                    key={item.id}
+                    id={item.id}
+                    category={item.category}
+                    price={`Rp.${item.price.toLocaleString("id-ID")}`}
+                    imgCard={item.image}
+                  >
+                    {item.name}
+                  </CardProduct>
+                ),
+              )
+            ) : (
+              <ProductEmpty />
+            )}
           </div>
         </div>
       </div>

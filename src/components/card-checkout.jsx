@@ -1,6 +1,6 @@
 
 
-export default function CardCheckout({children, imgCheckout, sizeCheckout, qtyCheckout, categoryCheckout, priceCheckout}) {
+export default function CardCheckout({children, imgCheckout, sizeCheckout, qtyCheckout, categoryCheckout, priceCheckout, color}) {
   return (
     <div className="card-body-checkout">
       <div className="first-side">
@@ -10,7 +10,7 @@ export default function CardCheckout({children, imgCheckout, sizeCheckout, qtyCh
       </div>
       <div className="second-side">
         <p className="title-card">{children}</p>
-        <p className="size-card">{sizeCheckout}</p>
+        <p className="size-card">{sizeCheckout}, {color}</p>
         <p className="qty-card">{qtyCheckout}</p>
       </div>
       <div className="third-side">

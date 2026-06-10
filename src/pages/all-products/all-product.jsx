@@ -5,27 +5,62 @@ import "../../assets/style/all-products/all-product.css";
 import { Heart, Search, ShoppingCart, UserRound } from "lucide-react";
 import ProductAdult from "../../components/all-products/products-adult";
 import ProductChild from "../../components/all-products/products-child";
-import { Link, useSearchParams } from "react-router";
+import { Link, useNavigate, useSearchParams } from "react-router";
 import { useState } from "react";
 
 export default function AllProduct() {
+  const navigate = useNavigate();
+
   const [searchParams] = useSearchParams();
 
   const category = searchParams.get("category");
+  const search = searchParams.get("search") || "";
+
+  const [isSearch, setIsSearch] = useState("");
+
+  const handleSearch = () => {
+    if (!isSearch.trim()) {
+      navigate("/allProduct");
+      return;
+    }
+
+    navigate(`/allProduct?search=${encodeURIComponent(isSearch)}`);
+  };
 
   const [option, setOption] = useState(category === "anak" ? 2 : 1);
-
-  // useEffect(() => {
-  //   if (category === "anak") {
-  //     setOption(2);
-  //   } else {
-  //     setOption(1);
-  //   }
-  // }, [category]);
 
   return (
     <MainLayout>
       <div className="content-all-product">
+        <div className="header-home">
+          <div className="input-search">
+            <input
+              type="text"
+              placeholder="Cari produk yang kamu mau!"
+              value={isSearch}
+              onChange={(e) => setIsSearch(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  handleSearch();
+                }
+              }}
+            />
+            <button onClick={handleSearch}>
+              <Search className="icon-search" />
+            </button>
+          </div>
+          <div className="icon-menu">
+            <Link to="/cart" className="icon-menu-item">
+              <ShoppingCart className="shopping-icon" />
+            </Link>
+            <Link to="/favorite" className="icon-menu-item">
+              <Heart className="heart-icon" />
+            </Link>
+            <Link to="/profile" className="icon-menu-item">
+              <UserRound className="user-icon" />
+            </Link>
+          </div>
+        </div>
         {/* HEADER */}
 
         <div className="section-btn">
@@ -44,200 +79,12 @@ export default function AllProduct() {
           </button>
         </div>
 
-        {option === 1 ? <ProductAdult /> : <ProductChild />}
+        {option === 1 ? (
+          <ProductAdult search={search} />
+        ) : (
+          <ProductChild search={search} />
+        )}
       </div>
     </MainLayout>
   );
-}
-
-{
-  /* <div className="content-body">
-          <div className="group-product">
-            <div className="title">
-            <p>Set Gamis</p>
-            </div>
-            <div className="body-card">
-            <CardProduct
-              category={"Gamis"}
-              price={"Rp.200,000"}
-              imgCard={cardimg1}
-            >
-              Set Gamis Abaya
-            </CardProduct>
-            <CardProduct
-              category={"Gamis"}
-              price={"Rp.200,000"}
-              imgCard={cardimg1}
-            >
-              Set Gamis Abaya
-            </CardProduct>
-            <CardProduct
-              category={"Gamis"}
-              price={"Rp.200,000"}
-              imgCard={cardimg1}
-            >
-              Set Gamis Abaya
-            </CardProduct>
-            <CardProduct
-              category={"Gamis"}
-              price={"Rp.200,000"}
-              imgCard={cardimg1}
-            >
-              Set Gamis Abaya
-            </CardProduct>
-            <CardProduct
-              category={"Gamis"}
-              price={"Rp.200,000"}
-              imgCard={cardimg1}
-            >
-              Set Gamis Abaya
-            </CardProduct>
-            </div>
-          </div>
-          <div className="group-product">
-            <div className="title">
-            <p>Gamis</p>
-            </div>
-            <div className="body-card">
-            <CardProduct
-              category={"Gamis"}
-              price={"Rp.200,000"}
-              imgCard={cardimg1}
-            >
-              Set Gamis Abaya
-            </CardProduct>
-            <CardProduct
-              category={"Gamis"}
-              price={"Rp.200,000"}
-              imgCard={cardimg1}
-            >
-              Set Gamis Abaya
-            </CardProduct>
-            <CardProduct
-              category={"Gamis"}
-              price={"Rp.200,000"}
-              imgCard={cardimg1}
-            >
-              Set Gamis Abaya
-            </CardProduct>
-            <CardProduct
-              category={"Gamis"}
-              price={"Rp.200,000"}
-              imgCard={cardimg1}
-            >
-              Set Gamis Abaya
-            </CardProduct>
-            <CardProduct
-              category={"Gamis"}
-              price={"Rp.200,000"}
-              imgCard={cardimg1}
-            >
-              Set Gamis Abaya
-            </CardProduct>
-            
-            <CardProduct
-              category={"Gamis"}
-              price={"Rp.200,000"}
-              imgCard={cardimg1}
-            >
-              Set Gamis Abaya
-            </CardProduct>
-            <CardProduct
-              category={"Gamis"}
-              price={"Rp.200,000"}
-              imgCard={cardimg1}
-            >
-              Set Gamis Abaya
-            </CardProduct>
-            <CardProduct
-              category={"Gamis"}
-              price={"Rp.200,000"}
-              imgCard={cardimg1}
-            >
-              Set Gamis Abaya
-            </CardProduct>
-            </div>
-          </div>
-
-          <div className="group-product">
-            <div className="title">
-            <p>Hijab</p>
-            </div>
-            <div className="body-card">
-            <CardProduct
-              category={"Gamis"}
-              price={"Rp.200,000"}
-              imgCard={cardimg1}
-            >
-              Set Gamis Abaya
-            </CardProduct>
-            <CardProduct
-              category={"Gamis"}
-              price={"Rp.200,000"}
-              imgCard={cardimg1}
-            >
-              Set Gamis Abaya
-            </CardProduct>
-            <CardProduct
-              category={"Gamis"}
-              price={"Rp.200,000"}
-              imgCard={cardimg1}
-            >
-              Set Gamis Abaya
-            </CardProduct>
-            <CardProduct
-              category={"Gamis"}
-              price={"Rp.200,000"}
-              imgCard={cardimg1}
-            >
-              Set Gamis Abaya
-            </CardProduct>
-            <CardProduct
-              category={"Gamis"}
-              price={"Rp.200,000"}
-              imgCard={cardimg1}
-            >
-              Set Gamis Abaya
-            </CardProduct>
-            </div>
-          </div>
-
-          <div className="group-product">
-            <div className="title">
-            <p>Kaos Kaki</p>
-            </div>
-            <div className="body-card">
-            <CardProduct
-              category={"Gamis"}
-              price={"Rp.200,000"}
-              imgCard={cardimg1}
-            >
-              Set Gamis Abaya
-            </CardProduct>
-            <CardProduct
-              category={"Gamis"}
-              price={"Rp.200,000"}
-              imgCard={cardimg1}
-            >
-              Set Gamis Abaya
-            </CardProduct>
-            <CardProduct
-              category={"Gamis"}
-              price={"Rp.200,000"}
-              imgCard={cardimg1}
-            >
-              Set Gamis Abaya
-            </CardProduct>
-            <CardProduct
-              category={"Gamis"}
-              price={"Rp.200,000"}
-              imgCard={cardimg1}
-            >
-              Set Gamis Abaya
-            </CardProduct>
-            
-            </div>
-            
-          </div>
-        </div> */
 }
