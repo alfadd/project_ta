@@ -48,15 +48,55 @@
     font-weight: 500;
   }
 
-  .content-login > .content-body > .section-1 > div > input {
+  .content-login > .content-body > .section-1 > div > .input-wrapper {
+    position: relative;
+    width: 100%;
+  }
+
+  .content-login > .content-body > .section-1 > div > .input-wrapper > input {
     width: 100%;
     height: 2.7rem;
-    padding: 0 1rem;
+    padding: 0 3rem 0 1rem;
     color: black;
     background-color: white;
     border: 1px solid #b3b3b3;
     border-radius: 0.3rem;
     box-sizing: border-box;
+  }
+
+  /* BUTTON EYE */
+  .content-login
+    > .content-body
+    > .section-1
+    > div
+    > .input-wrapper
+    > .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 0.8rem;
+    transform: translateY(-50%);
+
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  /* ICON */
+  .content-login
+    > .content-body
+    > .section-1
+    > div
+    > .input-wrapper
+    > .toggle-password
+    svg {
+    color: black;
+    width: 18px;
+    height: 18px;
   }
 
   .content-login > .content-body > .section-bottom {
@@ -153,15 +193,55 @@
     font-weight: 500;
   }
 
-  .content-login > .content-body > .section-1 > div > input {
+  .content-login > .content-body > .section-1 > div > .input-wrapper {
+    position: relative;
+    width: 100%;
+  }
+
+  .content-login > .content-body > .section-1 > div > .input-wrapper > input {
     width: 100%;
     height: 2.7rem;
-    padding: 0 1rem;
+    padding: 0 3rem 0 1rem;
     color: black;
     background-color: white;
     border: 1px solid #b3b3b3;
     border-radius: 0.3rem;
     box-sizing: border-box;
+  }
+
+  /* BUTTON EYE */
+  .content-login
+    > .content-body
+    > .section-1
+    > div
+    > .input-wrapper
+    > .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 0.8rem;
+    transform: translateY(-50%);
+
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  /* ICON */
+  .content-login
+    > .content-body
+    > .section-1
+    > div
+    > .input-wrapper
+    > .toggle-password
+    svg {
+    color: black;
+    width: 18px;
+    height: 18px;
   }
 
   .content-login > .content-body > .section-bottom {
@@ -263,7 +343,6 @@
     position: relative;
     width: 100%;
   }
-
 
   .content-login > .content-body > .section-1 > div > .input-wrapper > input {
     width: 100%;
