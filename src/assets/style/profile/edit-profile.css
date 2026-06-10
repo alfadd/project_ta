@@ -354,6 +354,62 @@
     font-family: "Instrument Sans", sans-serif;
     cursor: pointer;
   }
+  .confirm-dialog {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(3px);
+  }
+
+  .confirm-dialog > .dialog-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: white;
+    width: 16rem;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    border: 1px solid #765353b6;
+    text-align: center;
+  }
+
+  .confirm-dialog > .dialog-content > p {
+    color: black;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 0.8rem;
+  }
+
+  .confirm-dialog > .dialog-content > .btn-group {
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+  }
+
+  .confirm-dialog > .dialog-content > .btn-group > .yes {
+    height: 2rem;
+    width: 5rem;
+    padding: 0;
+    background-color: #f4e9e9;
+    color: black;
+    border: 1px solid #765353;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  .confirm-dialog > .dialog-content > .btn-group > .no {
+    height: 2rem;
+    width: 5rem;
+    padding: 0;
+    background-color: #ec4a4aa4;
+    border: 1px solid #765353;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -706,6 +762,63 @@
     font-weight: 300;
     font-size: 0.8rem;
     font-family: "Instrument Sans", sans-serif;
+    cursor: pointer;
+  }
+
+  .confirm-dialog {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(3px);
+  }
+
+  .confirm-dialog > .dialog-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: white;
+    width: 16rem;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    border: 1px solid #765353b6;
+    text-align: center;
+  }
+
+  .confirm-dialog > .dialog-content > p {
+    color: black;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 0.8rem;
+  }
+
+  .confirm-dialog > .dialog-content > .btn-group {
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+  }
+
+  .confirm-dialog > .dialog-content > .btn-group > .yes {
+    height: 2rem;
+    width: 5rem;
+    padding: 0;
+    background-color: #f4e9e9;
+    color: black;
+    border: 1px solid #765353;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  .confirm-dialog > .dialog-content > .btn-group > .no {
+    height: 2rem;
+    width: 5rem;
+    padding: 0;
+    background-color: #ec4a4aa4;
+    border: 1px solid #765353;
+    border-radius: 0.5rem;
     cursor: pointer;
   }
 }
