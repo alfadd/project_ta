@@ -8,7 +8,6 @@ import {
   Zap,
 } from "lucide-react";
 import { Link, useNavigate } from "react-router";
-// import cardimg1 from "../../../src/cardimg1.jpg";
 import "../../assets/style/home/home.css";
 import CardProduct from "../../components/card-product";
 import CardProductDsc from "../../components/card-product-dsc";

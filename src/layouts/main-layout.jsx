@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 import ContainerLayout from "./container-layout";
 import Header from "./header";
+import Footer from "./footer";
 
 export default function MainLayout({children}) {
   return (
@@ -11,6 +12,7 @@ export default function MainLayout({children}) {
       </Link>
       </Header>
       <ContainerLayout>{children}</ContainerLayout>
+      <Footer />
     </>
   );
 }
